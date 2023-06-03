@@ -161,6 +161,16 @@
     margin-left: 5px;
 }
 
+
+
+/* boots */
+
+.boots {
+    background-image: url(../images/boots-bg.jpg);
+    padding-top: 42px;
+    padding-bottom: 97px;
+}
+
 .boots-title {
     font-family: 'Playfair Display';
     font-weight: 400;
@@ -168,7 +178,11 @@
     line-height: 1.35;
 
     color: #FFFFFF;
+    margin-left: 67px;
+}
 
+.boots-box {
+    display: flex;
 }
 
 .boots-text {
@@ -178,6 +192,11 @@
     line-height: 1.18;
 
     color: #FFFFFF;
+}
+
+.boots-img {
+    width: 835px;
+height: 400px;
 }
 
 .reviews-title {
