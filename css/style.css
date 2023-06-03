@@ -171,6 +171,15 @@
     padding-bottom: 97px;
 }
 
+.boots-box {
+    display: flex;
+}
+
+.boots-img {
+    width: 835px;
+height: 400px;
+}
+
 .boots-title {
     font-family: 'Playfair Display';
     font-weight: 400;
@@ -178,12 +187,19 @@
     line-height: 1.35;
 
     color: #FFFFFF;
-    margin-left: 67px;
+    margin-left: auto;
 }
 
-.boots-box {
+.boots-list {
     display: flex;
+    padding: 26px 65px;
+    background: linear-gradient(91.33deg, #8E32C6 15.44%, #D600C0 69.67%);
+border-radius: 15px;
+width: 715px;
+height: 85px;
+justify-content: space-between;
 }
+
 
 .boots-text {
     font-family: 'Roboto';
@@ -194,10 +210,11 @@
     color: #FFFFFF;
 }
 
-.boots-img {
-    width: 835px;
-height: 400px;
+.boots-content {
+    padding-left: 55px;
+    padding-top: 38px;
 }
+
 
 .reviews-title {
     font-family: 'Playfair Display';
