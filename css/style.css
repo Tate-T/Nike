@@ -6,7 +6,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+ /* header */
 .header {
     background-color: #012D63;
     padding-top: 30px;
@@ -53,7 +53,7 @@
     color: #DCDCDC;
 
 }
-
+/* hero */
 .hero{
     background-image: url(../images/hero-bg.jpg);
     padding-bottom: 286px;
@@ -111,12 +111,40 @@
     width: 160px;
     height: 120px;
 }
+/* proses */
+
+.proses-section{
+    background-image: url(../images/proses-bg.jpg);
+    padding-top: 55px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.proses-list {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+}
+
+.proses-box {
+    display: flex;
+    align-items: center;
+}
+
+.proses-item {
+    height: 470px;
+    background-image: url(../images/proses-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+}
 
 .proses-text {
     font-family: 'Salsa';
     font-weight: 400;
     font-size: 170px;
-    line-height: 1.69;
+    /* line-height: 1.69; */
 
     color: #FFFFFF;
 
@@ -129,8 +157,8 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 1.33;
-
-
+    color: #FFFFFF;
+    margin-left: 5px;
 }
 
 .boots-title {
