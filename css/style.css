@@ -290,6 +290,14 @@ border-radius: 15px;
     margin-bottom: 47px;
 }
 
+.who-img-revievs {
+    display: flex;
+}
+
+.who-reviews {
+    margin-left: 5px;
+}
+
 .reviews-name {
     font-family: 'Roboto';
     font-weight: 400;
@@ -298,6 +306,7 @@ border-radius: 15px;
 
     color: #FFFFFF;
 
+    margin-bottom: 1px;
 }
 
 .reviews-info {
@@ -311,6 +320,13 @@ border-radius: 15px;
 
 }
 
+/* order */
+
+.order {
+    background-image: url(../images/order-bc.jpg);
+    padding-top: 21px;
+    padding-bottom: 38px;
+}
 
 .order-title {
     font-family: 'Playfair Display';
@@ -318,9 +334,9 @@ border-radius: 15px;
     font-size: 48px;
     line-height: 1.33;
 
-
     color: #FFFFFF;
 
+    text-align: center;
 }
 
 .button-confirm {
@@ -328,13 +344,39 @@ border-radius: 15px;
     font-weight: 400;
     font-size: 28px;
     line-height: 1.18;
-
+    background-color: #FFFFFF;
     color: #8D8D8D;
+    border: solid #000000;
 
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
 }
 
+.order-input1 {
+    display: block;
+    border: 1px solid #000000;
+    border-radius: 50px;
 
-.order-item:first-child .order-input::placeholder {
+    width: 690px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-input {
+    display: block;
+    width: 580px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-item:first-child .order-input1::placeholder {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 28px;
@@ -342,6 +384,9 @@ border-radius: 15px;
 
     color: #959595;
 
+    padding-left: 25px;
+    padding-top: 12px;
+    padding-bottom: 13px;
 }
 
 .order-input::placeholder {
@@ -352,16 +397,42 @@ border-radius: 15px;
 
     color: #959595;
 
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 24px;
 }
 
 .order-button {
+    display: block;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 24px;
     line-height: 1.17;
+    border: none;
 
     color: #FFFFFF;
+    background-color: #8E32C6;
 
+    padding: 20px 49px 20px 48px;
+    border-radius: 16px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    background-color: #021635;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .footer-text {
@@ -372,6 +443,19 @@ border-radius: 15px;
 
     color: #FFFFFF;
 
+}
+
+.footer-country-img-nike-abr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-footer-nike-abr {
+    outline:solid red ; 
+}
+
+.div-footer-country {
+    margin-top: 44px;
 }
 
 .footer-mail {
@@ -394,6 +478,7 @@ border-radius: 15px;
 
     color: #FFFFFF;
 
+    margin-top: 7px;
 }
 
 .footer-abr {
@@ -403,5 +488,10 @@ border-radius: 15px;
     line-height: 1.33;
 
     color: #FFFFFF;
+}
 
+.footer-img-nike {
+    width: 108px;
+height: 81px;
+padding-top: 19px;
 }
