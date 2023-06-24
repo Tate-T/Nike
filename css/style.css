@@ -1,10 +1,15 @@
 .container {
-    outline: solid red;
     width: 1137px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+section{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
  /* header */
 .header {
@@ -117,8 +122,6 @@
     background-image: url(../images/proses-bg.jpg);
     padding-top: 55px;
     padding-bottom: 80px;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .proses-list {
@@ -135,8 +138,6 @@
 .proses-item {
     height: 470px;
     background-image: url(../images/proses-line.png);
-    background-repeat: no-repeat;
-    background-position: center;
     width: 300px;
 }
 
@@ -469,9 +470,6 @@ border-radius: 15px;
     margin-top: 24px;
 }
 
-.div-footer-nike-abr {
-    outline:solid red ; 
-}
 
 .div-footer-country {
     margin-top: 44px;
