@@ -1,15 +1,10 @@
 .container {
+    outline: solid red;
     width: 1137px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-}
-
-section{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
  /* header */
 .header {
@@ -61,9 +56,14 @@ section{
 /* hero */
 .hero{
     background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-container{
+    position: relative;
     padding-bottom: 286px;
 }
-
 .hero-abr {
     font-family: 'PT Serif';
     font-weight: 400;
@@ -116,12 +116,25 @@ section{
     width: 160px;
     height: 120px;
 }
+.hero-image{
+    width: 837px;
+    height: 403px;
+    transform-origin: bottom left;
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 478px;
+    /* top: 387px; */
+    bottom: 0;
+}
+
 /* proses */
 
 .proses-section{
     background-image: url(../images/proses-bg.jpg);
     padding-top: 55px;
     padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .proses-list {
@@ -138,6 +151,8 @@ section{
 .proses-item {
     height: 470px;
     background-image: url(../images/proses-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
     width: 300px;
 }
 
@@ -338,20 +353,7 @@ border-radius: 15px;
     color: #FFFFFF;
 
     text-align: center;
-
-    margin-bottom: 33px;
 }
-
-.order-list {   
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   gap: 19px;
-}
-
-/* .order-item:not(:first-child) {
-    margin-top: 19px;
-} */
 
 .button-confirm {
     font-family: 'Roboto';
@@ -385,7 +387,9 @@ border-radius: 15px;
     border: 1px solid #000000;
     border-radius: 50px;
 
-    padding: 11px 24px ;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .order-item:first-child .order-input1::placeholder {
@@ -441,16 +445,9 @@ border-radius: 15px;
     background-color: #021635;
 }
 
-.footer-list {
-    margin-bottom: 20px;
-}
-
 .footer-item {
     display: flex;
     justify-content: space-between;
-}
-
-.footer-item:not(:first-child) {
     margin-top: 10px;
 }
 
@@ -467,9 +464,11 @@ border-radius: 15px;
 .footer-country-img-nike-abr {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
 }
 
+.div-footer-nike-abr {
+    outline:solid red ; 
+}
 
 .div-footer-country {
     margin-top: 44px;
