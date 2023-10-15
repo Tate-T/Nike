@@ -55,11 +55,15 @@
 }
 /* hero */
 .hero{
+    margin: 0 auto;
+    max-width: 1440px;
     background-image: url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: lightgray;
 }
+
 .hero-container{
     position: relative;
     padding-bottom: 286px;
@@ -182,18 +186,44 @@
 /* boots */
 
 .boots {
+    margin: 0 auto;
+    max-width: 1440px;
     background-image: url(../images/boots-bg.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.boots-line {
+    width: 403px;
+    height: 183px;
+    position: absolute;
+    top: 95px;
+    right: -11px;
+}
+
+.boots-container {
     padding-top: 42px;
     padding-bottom: 97px;
+    position: relative;
 }
 
 .boots-box {
     display: flex;
 }
 
+.boots-border {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 258px;
+    right: 371px;
+}
+
 .boots-img {
     width: 835px;
-height: 400px;
+    height: 400px;
 }
 
 .boots-title {
@@ -210,10 +240,10 @@ height: 400px;
     display: flex;
     padding: 26px 65px;
     background: linear-gradient(91.33deg, #8E32C6 15.44%, #D600C0 69.67%);
-border-radius: 15px;
-width: 715px;
-height: 85px;
-justify-content: space-between;
+    border-radius: 15px;
+    width: 715px;
+    height: 85px;
+    justify-content: space-between;
 }
 
 
