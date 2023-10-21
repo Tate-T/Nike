@@ -1,0 +1,36 @@
+.modal-text {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.modal-number {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal-date {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal-cvc {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal-card {
+    color: #808080;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
