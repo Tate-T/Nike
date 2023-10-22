@@ -6,6 +6,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 /* header */
 .header {
   background-color: #012d63;
@@ -51,6 +52,7 @@
 
   color: #dcdcdc;
 }
+
 /* hero */
 .hero {
   margin: 0 auto;
@@ -66,6 +68,7 @@
   position: relative;
   padding-bottom: 286px;
 }
+
 .hero-abr {
   font-family: "PT Serif";
   font-weight: 400;
@@ -117,6 +120,7 @@
   width: 160px;
   height: 120px;
 }
+
 .hero-image {
   width: 837px;
   height: 403px;
@@ -257,6 +261,8 @@
   background-image: url(../images/reviews-bc.jpg);
   padding-top: 35px;
   padding-bottom: 88px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews-list {
@@ -272,35 +278,29 @@
 }
 
 .reviews-item:nth-child(1) {
-  background: linear-gradient(
-    136.55deg,
-    #00e5e6 7.29%,
-    #00a8f7 26.04%,
-    #9a76f9 62.5%,
-    #cc5ec2 100%
-  );
+  background: linear-gradient(136.55deg,
+      #00e5e6 7.29%,
+      #00a8f7 26.04%,
+      #9a76f9 62.5%,
+      #cc5ec2 100%);
   border-radius: 15px;
 }
 
 .reviews-item:nth-child(2) {
-  background: linear-gradient(
-    136.55deg,
-    #ff68b4 0%,
-    #ff45e1 26.04%,
-    #ce3aff 62.84%,
-    #8961ff 100%
-  );
+  background: linear-gradient(136.55deg,
+      #ff68b4 0%,
+      #ff45e1 26.04%,
+      #ce3aff 62.84%,
+      #8961ff 100%);
   border-radius: 15px;
 }
 
 .reviews-item:nth-child(3) {
-  background: linear-gradient(
-    142.67deg,
-    #ffe128 0%,
-    #ff9b5c 30.21%,
-    #ff8381 63.29%,
-    #ff5489 100%
-  );
+  background: linear-gradient(142.67deg,
+      #ffe128 0%,
+      #ff9b5c 30.21%,
+      #ff8381 63.29%,
+      #ff5489 100%);
   border-radius: 15px;
 }
 
@@ -375,6 +375,11 @@
   background-image: url(../images/order-bc.jpg);
   padding-top: 21px;
   padding-bottom: 38px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
 }
 
 .order-title {
@@ -540,33 +545,4 @@
   width: 108px;
   height: 81px;
   padding-top: 19px;
-}
-
-.modal-visa {
-  width: 105px;
-  height: 35px;
-}
-
-.modal-mastercard {
-  width: 106px;
-  height: 64px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.modal-sneaker {
-  width: 205px;
-  height: 100px;
 }

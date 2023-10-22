@@ -1,36 +1,159 @@
+* {
+    font-family: 'Roboto';
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-sneaker {
+    width: 205px;
+    height: 100px;
+}
+
+.modal-window {
+    background-image: url(../images/modal-flowers.webp), url(../images/modal-bg.webp);
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: left, center;
+    background-size: 355px 455px, cover;
+    max-width: 1440px;
+    padding-top: 101px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-visa {
+    width: 105px;
+    height: 35px;
+}
+
+.modal-mastercard {
+    width: 106px;
+    height: 64px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 .modal-text {
     color: #FFF;
-    font-family: 'Roboto';
     font-size: 28px;
     font-weight: 400;
+    text-align: center;
+
 }
 
 .modal-number {
     color: #FFF;
-    font-family: 'Roboto';
     font-size: 18px;
     font-weight: 400;
 }
 
 .modal-date {
     color: #FFF;
-    font-family: 'Roboto';
     font-size: 18px;
     font-weight: 400;
 }
 
 .modal-cvc {
     color: #FFF;
-    font-family: 'Roboto';
     font-size: 18px;
     font-weight: 400;
 }
 
 .modal-card {
     color: #808080;
-    font-family: Roboto;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+}
+
+.modal-order {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.modal-price {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.modal-button {
+    border-radius: 10px;
+    background: #8E32C6;
+    width: 255px;
+    height: 70px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form-content {
+    width: 575px;
+    height: 280px;
+    background: rgba(168, 168, 168, 0.26);
+    padding: 15px 14px 22px 19px;
+}
+
+.modal-payment {
+    outline: solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 65px;
+
+}
+
+.modal-visa {
+    width: 125.656px;
+    height: 90.647px;
+    background: #FFF;
+    padding: 28px 10px 28px 10px;
+}
+
+.modal-mastercard {
+    background: #FFF;
+    padding: 13px 10px 13px 9px;
+    width: 125.656px;
+    height: 90.647px;
+}
+
+.modal-img {
+    outline: solid green;
+}
+
+.modal-wraper {
+    display: flex;
+}
+
+.modal-payment div {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-images {
+    display: flex;
+    gap: 32px;
 }
