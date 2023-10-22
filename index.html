@@ -171,9 +171,9 @@
       <div class="container">
         <h2 class="order-title">Order</h2>
         <form class="order-form">
-          <button type="button" class="button-confirm">Confirm</button>
           <ul class="order-list">
             <li class="order-item">
+              <button type="button" class="button-confirm">Confirm</button>
               <input type="text" class="order-input1" placeholder="Write your email" required />
             </li>
             <li class="order-item">
@@ -186,7 +186,7 @@
               <input type="text" class="order-input" placeholder="Your Adress" />
             </li>
           </ul>
-          <button type="submit" class="order-button">Order my Nike</button>
+          <button data-modal-open type="submit" class="order-button">Order my Nike</button>
         </form>
       </div>
     </section>
@@ -220,10 +220,11 @@
     </div>
   </footer>
   <!-- modal window -->
-  <div class="backdrop">
+  <div data-modal class="backdrop is-hidden">
     <div class="modal-window">
       <div class="container">
         <form class="form">
+          <button class="modal-close" data-modal-close>close</button>
           <div class="form-content">
             <h3 class="modal-text">Payment card</h3>
             <div class="modal-wraper">
@@ -276,6 +277,7 @@
       </div>
     </div>
   </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
