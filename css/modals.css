@@ -2,6 +2,15 @@
   font-family: 'Roboto';
 }
 
+.container {
+  width: 1130px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -34,6 +43,7 @@
   background-repeat: no-repeat;
   background-position: left, center;
   background-size: 355px 455px, cover;
+  width: 100%;
   max-width: 1440px;
   padding-top: 101px;
   position: absolute;
@@ -57,6 +67,14 @@
 
   padding: 20px 49px 20px 48px;
   border-radius: 16px;
+}
+
+.modal-payment {
+  margin-top: 10px;
+}
+
+.modal-img {
+  margin-top: 16px;
 }
 
 .modal-visa {
@@ -112,6 +130,27 @@
   color: #808080;
   font-size: 18px;
   font-weight: 400;
+  background: #2C4D74;
+  border: 1px solid #000;
+  width: 194px;
+height: 32px;
+display: block;
+}
+
+.modal-expired {
+  background: #2C4D74;
+  border: 1px solid #000;
+  width: 66px;
+height: 32px;
+display: block;
+}
+
+.modal-code {
+  background: #2C4D74;
+  border: 1px solid #000;
+  width: 66px;
+  height: 32px;
+  display: block;
 }
 
 .modal-order {
@@ -165,6 +204,9 @@
 }
 
 .modal-img {
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
 }
 
 .modal-wraper {
@@ -178,5 +220,23 @@
 
 .modal-images {
   display: flex;
-  gap: 32px;
+  gap: 23px;
+}
+
+.modal-checkbox {
+  border: 1px solid #000;
+  background-color: transparent;
+}
+
+.checkbox-box {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.modal-remember {
+  color: #FFF;
+font-size: 18px;
+font-weight: 400;
 }
