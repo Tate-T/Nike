@@ -299,11 +299,12 @@
 }
 
 .modal-checkbox {
-  border: 1px solid #000;
   background-color: transparent;
+  appearance: none;
 }
 
 .checkbox-box {
+  position: relative;
   margin-top: 80px;
   display: flex;
   justify-content: flex-end;
@@ -311,6 +312,7 @@
 }
 
 .modal-remember {
+  display: block;
   color: #FFF;
   font-size: 18px;
   font-weight: 400;
@@ -326,4 +328,24 @@
 .modal-label{
   position: relative;
   display: block;
+}
+
+.modal-custom {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  background-color: #8e32c6;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  right: 125px;
+}
+
+.modal-check {
+  fill: white;
+  opacity: 0;
+}
+
+.modal-checkbox:checked + .modal-custom > .modal-check {
+  opacity: 1;
 }
