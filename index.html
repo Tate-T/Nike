@@ -251,8 +251,8 @@
                 </ul>
 
                 <div class="checkbox-box">
-                <input class="modal-checkbox" id="checkbox" type="checkbox" />
-                <label class="modal-remember" for="checkbox">Remember me</label>
+                  <input class="modal-checkbox" id="checkbox" type="checkbox" />
+                  <label class="modal-remember" for="checkbox">Remember me</label>
                 </div>
               </div>
             </div>
@@ -260,11 +260,17 @@
 
           <div class="box-modal">
             <h3 class="modal-order">Final Order</h3>
-            <label class="visually-hidden" for="first-name">Write your first name</label>
-            <input class="modal-name" id="first-name" placeholder="Write your first name and last name" type="text">
+            <label class="modal-label" for="first-name">
+              
+              <input class="modal-name" required id="first-name" placeholder="Write your first name and last name"
+                type="text">
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
 
             <label class="visually-hidden" for="foot-size">Write your foot size</label>
-            <input class="modal-size" id="foot-size" type="text" placeholder="Write your foot size">
+            <input class="modal-size" required id="foot-size" type="text" placeholder="Write your foot size">
 
             <div class="modal-border">
               <img class="modal-sneaker" src="./images/nike-boots.webp" alt="Nike Boots">
@@ -273,7 +279,7 @@
             <p class="modal-price">299$</p>
           </div>
 
-          <button class="modal-button" type="button">Buy my nike</button>
+          <button class="modal-button" type="submit">Buy my nike</button>
         </form>
       </div>
     </div>

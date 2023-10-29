@@ -20,6 +20,7 @@
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   opacity: 1;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -52,6 +53,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding-bottom: 117px;
+  overflow: scroll;
+  height: 100vh;
 }
 
 .modal-close {
@@ -111,17 +114,23 @@
   height: 50px;
   border-radius: 50px;
   border: 1px solid #000;
-
   background: #FFF;
   margin-bottom: 28px;
   color: #959595;
-
   font-family: Roboto;
   font-size: 28px;
   font-weight: 400;
   padding: 7px 108px 8px 22px;
 }
 
+.modal-name:hover, .modal-name:focus{
+  outline: 0;
+  box-shadow: 5px 5px 10px 5px #8e32c6 ;
+}
+
+.modal-name:focus + .modal-icon, .modal-name:hover + .modal-icon{
+  fill: #8e32c6;
+}
 .modal-border {
   width: 220px;
   height: 150px;
@@ -213,7 +222,6 @@
 
 .modal-form {
   width: 575px;
-
 }
 
 
@@ -308,3 +316,14 @@
   font-weight: 400;
 }
 
+.modal-icon{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.modal-label{
+  position: relative;
+  display: block;
+}
