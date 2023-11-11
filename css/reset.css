@@ -27,9 +27,11 @@ img {
 
 button {
   cursor: pointer;
+  transition: background-color 250ms linear 100ms, box-shadow 300ms linear 100ms, transform 500ms linear 100ms;
 }
 
 button:hover {
-    background-color: #8333b5;
+  background-color: #8333b5;
   box-shadow: 1px 2px 5px 3px #3a0b57;
+  transform: scale(1.025);
 }
