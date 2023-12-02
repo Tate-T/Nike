@@ -143,7 +143,24 @@
   background-color: #8e32c6;
   border-radius: 10px;
   border: none;
+
+  animation: ranToTop 1.5s cubic-bezier(.16,.95,.28,.82) 400ms both;
 }
+
+@keyframes ranToTop{
+  0% {
+    transform: translateY(250px) scale(0.5) rotate(180deg);
+  }
+
+  50% {
+
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .hero-logo {
   width: 160px;
   height: 120px;
