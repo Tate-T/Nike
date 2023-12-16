@@ -14,9 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/modals.css">
+  <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
 <body>
@@ -194,71 +192,74 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <ul class="footer-list">
-        <li class="footer-item">
-          <p class="footer-text">Have a question?</p>
-          <a href="mailto:ColoRawe_support@gmail.com" class="footer-mail">ColoRawe_support@gmail.com</a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <p class="footer__text">Have a question?</p>
+          <a href="mailto:ColoRawe_support@gmail.com" class="footer__mail">ColoRawe_support@gmail.com</a>
         </li>
-        <li class="footer-item">
-          <p class="footer-text">Have a proposal for cooperation?</p>
-          <a href="mailto:ColoRawe_Cooperation@gmail.com" class="footer-mail">ColoRawe_Cooperation@gmail.com</a>
+        <li class="footer__item">
+          <p class="footer__text">Have a proposal for cooperation?</p>
+          <a href="mailto:ColoRawe_Cooperation@gmail.com" class="footer__mail">ColoRawe_Cooperation@gmail.com</a>
         </li>
-        <li class="footer-item">
-          <p class="footer-text">Advertising questions?</p>
-          <a href="mailto:ColoRawe_Advertising@gmail.com" class="footer-mail">ColoRawe_Advertising@gmail.com</a>
+        <li class="footer__item">
+          <p class="footer__text">Advertising questions?</p>
+          <a href="mailto:ColoRawe_Advertising@gmail.com" class="footer__mail">ColoRawe_Advertising@gmail.com</a>
         </li>
       </ul>
-      <div class="footer-country-img-nike-abr">
-        <div class="div-footer-country">
-          <p class="footer-country">2022 ColoRawe @All rights reserved</p>
-          <p class="footer-country">United States</p>
+      <div class="footer__country-img-nike-abr">
+        <div class="div__footer__country">
+          <p class="footer__country">2022 ColoRawe @All rights reserved</p>
+          <p class="footer__country">United States</p>
         </div>
-        <div class="div-footer-nike-abr">
-          <img class="footer-img-nike" src="./images/logo.png" alt="Nike" />
-          <p class="footer-abr">С&R</p>
+        <div class="div-footer__nike-abr">
+          <img class="footer__img-nike" src="./images/logo.png" alt="Nike" />
+          <p class="footer__abr">С&R</p>
         </div>
       </div>
     </div>
   </footer>
   <!-- modal window -->
   <div data-modal class="backdrop is-hidden">
-    <div class="modal-window">
+    <div class="modal__window">
       <div class="container">
-        <form class="modal-form">
-          <button class="modal-close" data-modal-close>close</button>
+        <form class="modal__form">
+          <button class="modal__close" data-modal-close>close</button>
           <div class="form-content">
-            <h3 class="modal-text">Payment card</h3>
-            <div class="modal-wraper">
-              <div class="modal-payment">
+            <h3 class="modal__text">Payment card</h3>
+            <div class="modal__wraper">
+              <div class="modal__payment">
                 <div>
-                  <label class="modal-number" for="card-number">Card Number</label>
-                  <input class="modal-card" id="card-number" placeholder="1111 1111 1111 1111" type="text" />
+                  <label class="modal__number" for="card-number">Card Number</label>
+                  <input class="modal__card" id="card-number" placeholder="1111 1111 1111 1111" type="text" />
                 </div>
                 <div>
-                  <label class="modal-date" for="expired-date">Date of ending</label>
-                  <input class="modal-expired" id="expired-date" placeholder="01/01" type="text" />
+                  <label class="modal__date" for="expired-date">Date of ending</label>
+                  <input class="modal__expired" id="expired-date" placeholder="01/01" type="text" />
                 </div>
                 <div>
-                  <label class="modal-cvc" for="cvc">CVC</label>
-                  <input class="modal-code" id="cvc" placeholder="001" type="text" />
+                  <label class="modal__cvc" for="cvc">CVC</label>
+                  <input class="modal__code" id="cvc" placeholder="001" type="text" />
                 </div>
               </div>
 
-              <div class="modal-img">
-                <ul class="modal-images">
-                  <li class="modal-image"><img class="modal-visa" src="./images/visa.png" alt="VISA"></li>
-                  <li class="modal-image"><img class="modal-mastercard" src="./images/mastercard.png" alt="MasterCard">
+              <div class="modal__img">
+                <ul class="modal__images">
+                  <li class="modal__image">
+                    <img class="modal__visa" src="./images/visa.png" alt="VISA"></li>
+                  <li class="modal__image">
+                    <img class="modal__mastercard" src="./images/mastercard.png"
+                      alt="MasterCard">
                   </li>
                 </ul>
 
                 <div class="checkbox-box">
-                  <input class="modal-checkbox" id="checkbox" type="checkbox" />
-                  <span class="modal-custom">
-                    <svg class="modal-check" width="15" height="15">
+                  <input class="modal__checkbox" id="checkbox" type="checkbox" />
+                  <span class="modal__custom">
+                    <svg class="modal__check" width="15" height="15">
                       <use href="./images/icons.svg#icon-checkmark"></use>
                     </svg>
                   </span>
-                  <label class="modal-remember" for="checkbox">
+                  <label class="modal__remember" for="checkbox">
                     <span>Remember me</span>
                   </label>
                 </div>
@@ -267,27 +268,27 @@
           </div>
 
           <div class="box-modal">
-            <h3 class="modal-order">Final Order</h3>
-            <label class="modal-label" for="first-name">
-              
-              <input class="modal-name" required id="first-name" placeholder="Write your first name and last name"
+            <h3 class="modal__order">Final Order</h3>
+            <label class="modal__label" for="first-name">
+
+              <input class="modal__name" required id="first-name" placeholder="Write your first name and last name"
                 type="text">
-              <svg class="modal-icon">
+              <svg class="modal__icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </label>
 
             <label class="visually-hidden" for="foot-size">Write your foot size</label>
-            <input class="modal-size" required id="foot-size" type="text" placeholder="Write your foot size">
+            <input class="modal__size" required id="foot-size" type="text" placeholder="Write your foot size">
 
-            <div class="modal-border">
-              <img class="modal-sneaker" src="./images/nike-boots.webp" alt="Nike Boots">
+            <div class="modal__border">
+              <img class="modal__sneaker" src="./images/nike-boots.webp" alt="Nike Boots">
             </div>
 
-            <p class="modal-price">299$</p>
+            <p class="modal__price">299$</p>
           </div>
 
-          <button class="modal-button" type="submit">Buy my nike</button>
+          <button class="modal__button" type="submit">Buy my nike</button>
         </form>
       </div>
     </div>
