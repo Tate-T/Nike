@@ -1,0 +1,70 @@
+.footer {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    background-color: #021635;
+  }
+  
+  .footer-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .footer-text {
+    font-family: $main-font;
+    
+    font-size: 24px;
+    line-height: 1.17;
+  
+    color: $main-color;
+  }
+  
+  .footer-country-img-nike-abr {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+//   .div-footer-nike-abr {
+
+//   }
+  
+  .div-footer-country {
+    margin-top: 44px;
+  }
+  
+  .footer-mail {
+    font-family: $main-font;
+    
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration-line: underline;
+  
+    color: $main-color;
+  }
+  
+  .footer-country {
+    font-family: $main-font;
+    
+    font-size: $main-font-size;
+    line-height: 1.17;
+  
+    color: $main-color;
+  
+    margin-top: 7px;
+  }
+  
+  .footer-abr {
+    font-family: $second-font;
+    
+    font-size: 24px;
+    line-height: 1.33;
+  
+    color: $main-color;
+  }
+  
+  .footer-img-nike {
+    width: 108px;
+    height: 81px;
+    padding-top: 19px;
+  }
+  

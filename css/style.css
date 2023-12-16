@@ -1,3 +1,8 @@
+* {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
 .container {
   width: 1130px;
   padding-left: 15px;
@@ -6,126 +11,153 @@
   margin-right: auto;
 }
 
-/* header */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 250ms linear 100ms, box-shadow 300ms linear 100ms, transform 500ms linear 100ms;
+}
+
+button:hover {
+  background-color: #8333b5;
+  box-shadow: 1px 2px 5px 3px #3a0b57;
+  transform: scale(1.025);
+}
+
 .header {
   background-color: #012d63;
   padding-top: 30px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-nike {
+.header__nike {
   width: 100px;
   height: 60px;
 }
 
-.header-link {
-  font-family: 'Roboto';
+.header__link {
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 24px;
   line-height: 1.17;
-
   color: #c7c7c7;
 }
 
-.header-pages {
+.header__pages {
   display: flex;
   gap: 29px;
   margin-left: 152px;
 }
 
-.header-list {
+.header__list {
   display: flex;
   gap: 12px;
   margin-left: auto;
 }
 
-.header-item {
-  font-family: 'Roboto';
+.header__item {
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 24px;
   line-height: 1.17;
-
   color: #dcdcdc;
 }
 
-/* hero */
 .hero {
   margin: 0 auto;
   max-width: 1440px;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: lightgray;
 }
 
-.hero-container {
+.hero__container {
   position: relative;
   padding-bottom: 286px;
 }
 
-.hero-abr {
-  font-family: 'PT Serif';
-  font-weight: 400;
+.hero__abr {
+  font-family: "PT Serif";
   font-size: 48px;
   line-height: 1.33;
   color: #ffffff;
 }
 
-.hero-title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
+.hero__title {
+  font-family: "Playfair Display";
   font-size: 144px;
   line-height: 1.33;
   color: #ffffff;
-
   animation: title-to-right 2000ms ease-out 400ms both;
-
 }
 
-@keyframes title-to-right{
-  0%{
+@keyframes title-to-right {
+  0% {
     transform: translateX(-200px);
     opacity: 0;
   }
-  50%{
+  50% {
     text-shadow: 2px 3px 4px violet;
   }
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes run-to-left{
-  0%{
+@keyframes run-to-left {
+  0% {
     transform: translateX(1000px);
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
-.hero-subtitle {
-  font-family: 'Playfair Display';
-  font-weight: 400;
+.hero__subtitle {
+  font-family: "Playfair Display";
   font-size: 72px;
   line-height: 1.36;
   color: #ffffff;
   margin-bottom: 12px;
   z-index: 3;
   position: relative;
-  
   animation: run-to-left 1000ms ease-in 400ms both;
 }
 
-.hero-text {
-  font-family: 'Roboto';
-  font-weight: 400;
+.hero__text {
+  font-family: "Roboto";
   font-size: 18px;
   line-height: 1.17;
   color: #ffffff;
@@ -133,9 +165,8 @@
   margin-bottom: 41px;
 }
 
-.hero-button {
-  font-family: 'Roboto';
-  font-weight: 400;
+.hero__button {
+  font-family: "Roboto";
   font-size: 24px;
   line-height: 1.17;
   color: #ffffff;
@@ -143,30 +174,23 @@
   background-color: #8e32c6;
   border-radius: 10px;
   border: none;
-
-  animation: ranToTop 1.5s cubic-bezier(.16,.95,.28,.82) 400ms both;
+  animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
 }
 
-@keyframes ranToTop{
+@keyframes ranToTop {
   0% {
     transform: translateY(250px) scale(0.5) rotate(180deg);
   }
-
-  50% {
-
-  }
-
   100% {
     transform: translateY(0);
   }
 }
-
-.hero-logo {
+.hero__logo {
   width: 160px;
   height: 120px;
 }
 
-.hero-image {
+.hero__image {
   width: 837px;
   height: 403px;
   transform-origin: bottom left;
@@ -177,63 +201,56 @@
   bottom: 0;
 }
 
-/* proses */
-
-.proses-section {
-  background-image: url(../images/proses-bg.jpg);
+.proses__section {
+  background-image: url(../../images/proses-bg.jpg);
   padding-top: 55px;
   padding-bottom: 80px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.proses-list {
+.proses__list {
   display: flex;
   gap: 90px;
   justify-content: center;
 }
 
-.proses-box {
+.proses__box {
   display: flex;
   align-items: center;
 }
 
-.proses-item {
+.proses__item {
   height: 470px;
-  background-image: url(../images/proses-line.png);
+  background-image: url(../../images/proses-line.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 300px;
 }
 
-.proses-text {
-  font-family: 'Salsa';
-  font-weight: 400;
+.proses__text {
+  font-family: "Salsa";
   font-size: 170px;
   /* line-height: 1.69; */
-
   color: #ffffff;
 }
 
-.proses-title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
+.proses__title {
+  font-family: "Playfair Display";
   font-size: 36px;
   line-height: 1.33;
   color: #ffffff;
   margin-left: 5px;
 }
 
-/* boots */
-
 .boots {
   margin: 0 auto;
   max-width: 1440px;
-  background-image: url(../images/boots-bg.jpg);
+  background-image: url(../../images/boots-bg.jpg);
   background-repeat: no-repeat;
 }
 
-.boots-line {
+.boots__line {
   width: 403px;
   height: 183px;
   position: absolute;
@@ -241,17 +258,17 @@
   right: -11px;
 }
 
-.boots-container {
+.boots__container {
   padding-top: 42px;
   padding-bottom: 97px;
   position: relative;
 }
 
-.boots-box {
+.boots__box {
   display: flex;
 }
 
-.boots-border {
+.boots__border {
   border-radius: 50%;
   border: 2px solid #fff;
   width: 130px;
@@ -261,22 +278,20 @@
   right: 371px;
 }
 
-.boots-img {
+.boots__img {
   width: 835px;
   height: 400px;
 }
 
-.boots-title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
+.boots__title {
+  font-family: "Playfair Display";
   font-size: 28px;
   line-height: 1.35;
-
   color: #ffffff;
   margin-left: auto;
 }
 
-.boots-list {
+.boots__list {
   display: flex;
   padding: 26px 65px;
   background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
@@ -286,107 +301,78 @@
   justify-content: space-between;
 }
 
-.boots-text {
-  font-family: 'Roboto';
-  font-weight: 400;
+.boots__text {
+  font-family: "Roboto";
   font-size: 28px;
   line-height: 1.18;
-
   color: #ffffff;
 }
 
-.boots-content {
+.boots__content {
   padding-left: 55px;
   padding-top: 38px;
 }
 
-/* reviews */
-
 .reviews {
-  background-image: url(../images/reviews-bc.jpg);
-  padding-top: 35px;
+  background-image: url(../../images/reviews-bc.jpg);
+  padding-top: 30px;
   padding-bottom: 88px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.reviews-list {
+.reviews__list {
   display: flex;
   margin-top: 42px;
   gap: 93px;
   justify-content: center;
 }
 
-.reviews-item {
+.reviews__item {
   padding: 49px 14px 29px 13px;
   width: 255px;
 }
 
-.reviews-item:nth-child(1) {
-  background: linear-gradient(
-    136.55deg,
-    #00e5e6 7.29%,
-    #00a8f7 26.04%,
-    #9a76f9 62.5%,
-    #cc5ec2 100%
-  );
+.reviews__item:nth-child(1) {
+  background: linear-gradient(136.55deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
   border-radius: 15px;
 }
 
-.reviews-item:nth-child(2) {
-  background: linear-gradient(
-    136.55deg,
-    #ff68b4 0%,
-    #ff45e1 26.04%,
-    #ce3aff 62.84%,
-    #8961ff 100%
-  );
+.reviews__item:nth-child(2) {
+  background: linear-gradient(136.55deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
   border-radius: 15px;
 }
 
-.reviews-item:nth-child(3) {
-  background: linear-gradient(
-    142.67deg,
-    #ffe128 0%,
-    #ff9b5c 30.21%,
-    #ff8381 63.29%,
-    #ff5489 100%
-  );
+.reviews__item:nth-child(3) {
+  background: linear-gradient(142.67deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
   border-radius: 15px;
 }
 
-.reviews-title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
+.reviews__title {
+  font-family: "Playfair Display";
   font-size: 48px;
   line-height: 1.33;
   text-align: center;
-
   color: #ffffff;
 }
 
-.reviews-text {
-  font-family: 'Roboto';
-  font-weight: 400;
+.reviews__text {
+  font-family: "Roboto";
   font-size: 24px;
   line-height: 1.17;
-
   color: #ffffff;
 }
 
-.reviews-photo {
+.reviews__photo {
   width: 31px;
   height: 31px;
 }
 
-.reviews-time {
-  font-family: 'Roboto';
-  font-weight: 400;
+.reviews__time {
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 1.14;
-
   color: #d8d8d8;
-
   display: block;
   margin-top: 8px;
   margin-bottom: 47px;
@@ -400,143 +386,136 @@
   margin-left: 5px;
 }
 
-.reviews-name {
-  font-family: 'Roboto';
-  font-weight: 400;
+.reviews__name {
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 1.14;
-
   color: #ffffff;
-
   margin-bottom: 1px;
 }
 
-.reviews-info {
-  font-family: 'Roboto';
-  font-weight: 400;
+.reviews__info {
+  font-family: "Roboto";
   font-size: 12px;
   line-height: 1.17;
-
   color: #d8d8d8;
 }
 
-/* order */
-
 .order {
-  background-image: url(../images/order-bc.jpg);
+  max-width: 1440px;
   padding-top: 21px;
   padding-bottom: 38px;
   margin: auto;
+  background-image: url(../../images/order-bc.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
 }
 
-.order-title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
+.order__title {
+  font-family: "Playfair Display";
   font-size: 48px;
   line-height: 1.33;
-
-  color: #ffffff;
-
   text-align: center;
+  color: #ffffff;
 }
 
-.order-item:first-child {
+.order__item:first-child {
   position: relative;
   max-width: 690px;
   margin: 0 auto;
 }
 
-.button-confirm {
-  font-family: 'Roboto';
-  font-weight: 400;
+.order__item:first-child .order__input1::-moz-placeholder {
+  padding-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  font-family: "Roboto";
+  font-size: 28px;
+  line-height: 1.17;
+  color: #959595;
+}
+
+.order__item:first-child .order__input1::placeholder {
+  padding-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  font-family: "Roboto";
+  font-size: 28px;
+  line-height: 1.17;
+  color: #959595;
+}
+
+.button__confirm {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: solid #000000;
+  font-family: "Roboto";
   font-size: 28px;
   line-height: 1.18;
   background-color: #ffffff;
   color: #8d8d8d;
-  border: solid #000000;
-
-  width: 250px;
-  height: 50px;
-  border-radius: 50px;
-  position: absolute;
-  top: 5px;
-  right: 7px;
-  outline: none;
 }
 
-.order-input1 {
-  display: block;
-  border: 1px solid #000000;
-  border-radius: 50px;
-
+.order__input1 {
   width: 690px;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 50px;
 }
 
-.order-input {
+.order__input {
   display: block;
   width: 580px;
   height: 50px;
   border: 1px solid #000000;
   border-radius: 50px;
-
   margin-top: 19px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.order-item:first-child .order-input1::placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.17;
-
-  color: #959595;
-
-  padding-left: 25px;
-  padding-top: 12px;
-  padding-bottom: 13px;
-}
-
-.order-input::placeholder {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17;
-
-  color: #959595;
-
+.order__input::-moz-placeholder {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 24px;
-}
-
-.order-button {
-  display: block;
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: "Roboto";
   font-size: 24px;
   line-height: 1.17;
-  border: none;
+  color: #959595;
+}
 
-  color: #ffffff;
-  background-color: #8e32c6;
+.order__input::placeholder {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 1.17;
+  color: #959595;
+}
 
-  padding: 20px 49px 20px 48px;
-  border-radius: 16px;
-
+.order__button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 18px;
+  padding: 20px 49px 20px 48px;
+  border-radius: 16px;
+  border: none;
+  display: block;
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+  background-color: #8e32c6;
 }
-
-/* footer */
 
 .footer {
   padding-top: 45px;
@@ -551,11 +530,9 @@
 }
 
 .footer-text {
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: "Roboto";
   font-size: 24px;
   line-height: 1.17;
-
   color: #ffffff;
 }
 
@@ -564,40 +541,30 @@
   justify-content: space-between;
 }
 
-.div-footer-nike-abr {
-}
-
 .div-footer-country {
   margin-top: 44px;
 }
 
 .footer-mail {
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: "Roboto";
   font-size: 24px;
   line-height: 1.17;
   text-decoration-line: underline;
-
   color: #ffffff;
 }
 
 .footer-country {
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: "Roboto";
   font-size: 18px;
   line-height: 1.17;
-
   color: #ffffff;
-
   margin-top: 7px;
 }
 
 .footer-abr {
-  font-family: 'PT Serif';
-  font-weight: 400;
+  font-family: "PT Serif";
   font-size: 24px;
   line-height: 1.33;
-
   color: #ffffff;
 }
 
@@ -605,4 +572,4 @@
   width: 108px;
   height: 81px;
   padding-top: 19px;
-}
+}/*# sourceMappingURL=style.css.map */

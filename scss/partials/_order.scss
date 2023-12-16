@@ -1,0 +1,103 @@
+.order {
+  max-width: 1440px;
+  padding-top: 21px;
+  padding-bottom: 38px;
+  margin: auto;
+
+  background-image: url(../../images/order-bc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.order__title {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  line-height: 1.33;
+  text-align: center;
+  color: $main-color;
+}
+
+.order__item:first-child {
+  position: relative;
+
+  max-width: 690px;
+  margin: 0 auto;
+}
+
+.order__item:first-child .order__input1::placeholder {
+  padding-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+
+  font-family: $main-font;
+  font-size: 28px;
+  line-height: 1.17;
+  color: #959595;
+}
+
+.button__confirm {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  border: solid #000000;
+
+  font-family: $main-font;
+  font-size: 28px;
+  line-height: 1.18;
+  background-color: $main-color;
+  color: #8d8d8d;
+}
+
+.order__input1 {
+  width: 690px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 50px;
+}
+
+.order__input {
+  display: block;
+  width: 580px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  margin-top: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order__input::placeholder {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #959595;
+}
+
+.order__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  padding: 20px 49px 20px 48px;
+  border-radius: 16px;
+  border: none;
+  display: block;
+
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $main-color;
+  background-color: #8e32c6;
+
+}

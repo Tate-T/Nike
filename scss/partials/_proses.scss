@@ -1,0 +1,44 @@
+.proses__section {
+    background-image: url(../../images/proses-bg.jpg);
+    padding-top: 55px;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .proses__list {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+  }
+  
+  .proses__box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .proses__item {
+    height: 470px;
+    background-image: url(../../images/proses-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+  }
+  
+  .proses__text {
+    font-family: 'Salsa';
+    
+    font-size: 170px;
+    /* line-height: 1.69; */
+  
+    color: $main-color;
+  }
+  
+  .proses__title {
+    font-family: 'Playfair Display';
+    
+    font-size: 36px;
+    line-height: 1.33;
+    color: $main-color;
+    margin-left: 5px;
+  }

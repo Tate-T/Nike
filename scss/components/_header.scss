@@ -1,0 +1,44 @@
+.header {
+    background-color: #012d63;
+    padding-top: 30px;
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__nike {
+    width: 100px;
+    height: 60px;
+  }
+  
+  .header__link {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.17;
+  
+    color: #c7c7c7;
+  }
+  
+  .header__pages {
+    display: flex;
+    gap: 29px;
+    margin-left: 152px;
+  }
+  
+  .header__list {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+  }
+  
+  .header__item {
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.17;
+  
+    color: #dcdcdc;
+  }
