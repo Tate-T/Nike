@@ -7,118 +7,118 @@
   background-position: center;
   background-size: cover;
   background-color: lightgray;
-}
 
-.hero__container {
-  position: relative;
+  .hero__container {
+    position: relative;
 
-  padding-bottom: 286px;
-}
+    padding-bottom: 286px;
 
-.hero__logo {
-  width: 160px;
-  height: 120px;
-}
+    .hero__logo {
+      width: 160px;
+      height: 120px;
+    }
 
-.hero__abr {
-  font-family: $second-font;
-  font-size: 48px;
-  line-height: 1.33;
-  color: $main-color;
-}
+    .hero__abr {
+      font-family: $second-font;
+      font-size: 48px;
+      line-height: 1.33;
+      color: $main-color;
+    }
 
-.hero__title {
-  font-family: "Playfair Display";
-  font-size: 144px;
-  line-height: 1.33;
-  color: $main-color;
+    .hero__title {
+      font-family: "Playfair Display";
+      font-size: 144px;
+      line-height: 1.33;
+      color: $main-color;
 
-  animation: title-to-right 2000ms ease-out 400ms both;
-}
+      animation: title-to-right 2000ms ease-out 400ms both;
+    }
 
-@keyframes title-to-right {
-  0% {
-    transform: translateX(-200px);
-    opacity: 0;
+    @keyframes title-to-right {
+      0% {
+        transform: translateX(-200px);
+        opacity: 0;
+      }
+      50% {
+        text-shadow: 2px 3px 4px violet;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes run-to-left {
+      0% {
+        transform: translateX(1000px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .hero__subtitle {
+      position: relative;
+
+      margin-bottom: 12px;
+      z-index: 3;
+
+      font-family: "Playfair Display";
+      font-size: 72px;
+      line-height: 1.36;
+      color: $main-color;
+
+      animation: run-to-left 1000ms ease-in 400ms both;
+    }
+
+    .hero__text {
+      width: 508px;
+      margin-bottom: 41px;
+
+      font-family: $main-font;
+      font-size: $main-font-size;
+      line-height: 1.17;
+      color: $main-color;
+    }
+
+    .hero__button {
+      padding: 20px 61px;
+      border-radius: 10px;
+      border: none;
+
+      font-family: $main-font;
+      font-size: 24px;
+      line-height: 1.17;
+      color: $main-color;
+      background-color: #8e32c6;
+
+      animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
+    }
+
+    @keyframes ranToTop {
+      0% {
+        transform: translateY(250px) scale(0.5) rotate(180deg);
+      }
+
+      50% {
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .hero__image {
+      position: absolute;
+      left: 478px;
+      /* top: 387px; */
+      bottom: 0;
+
+      width: 837px;
+      height: 403px;
+
+      transform-origin: bottom left;
+      transform: rotate(-30deg);
+    }
   }
-  50% {
-    text-shadow: 2px 3px 4px violet;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes run-to-left {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.hero__subtitle {
-  position: relative;
-
-  margin-bottom: 12px;
-  z-index: 3;
-
-  font-family: "Playfair Display";
-  font-size: 72px;
-  line-height: 1.36;
-  color: $main-color;
-
-  animation: run-to-left 1000ms ease-in 400ms both;
-}
-
-.hero__text {
-  width: 508px;
-  margin-bottom: 41px;
-
-  font-family: $main-font;
-  font-size: $main-font-size;
-  line-height: 1.17;
-  color: $main-color;
-}
-
-.hero__button {
-  padding: 20px 61px;
-  border-radius: 10px;
-  border: none;
-
-  font-family: $main-font;
-  font-size: 24px;
-  line-height: 1.17;
-  color: $main-color;
-  background-color: #8e32c6;
-
-  animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
-}
-
-@keyframes ranToTop {
-  0% {
-    transform: translateY(250px) scale(0.5) rotate(180deg);
-  }
-
-  50% {
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.hero__image {
-  position: absolute;
-  left: 478px;
-  /* top: 387px; */
-  bottom: 0;
-  
-  width: 837px;
-  height: 403px;
-
-  transform-origin: bottom left;
-  transform: rotate(-30deg);
 }

@@ -97,32 +97,27 @@ button:hover {
   background-size: cover;
   background-color: lightgray;
 }
-
-.hero__container {
+.hero .hero__container {
   position: relative;
   padding-bottom: 286px;
 }
-
-.hero__logo {
+.hero .hero__container .hero__logo {
   width: 160px;
   height: 120px;
 }
-
-.hero__abr {
+.hero .hero__container .hero__abr {
   font-family: "PT Serif";
   font-size: 48px;
   line-height: 1.33;
   color: #ffffff;
 }
-
-.hero__title {
+.hero .hero__container .hero__title {
   font-family: "Playfair Display";
   font-size: 144px;
   line-height: 1.33;
   color: #ffffff;
   animation: title-to-right 2000ms ease-out 400ms both;
 }
-
 @keyframes title-to-right {
   0% {
     transform: translateX(-200px);
@@ -146,7 +141,7 @@ button:hover {
     opacity: 1;
   }
 }
-.hero__subtitle {
+.hero .hero__container .hero__subtitle {
   position: relative;
   margin-bottom: 12px;
   z-index: 3;
@@ -156,8 +151,7 @@ button:hover {
   color: #ffffff;
   animation: run-to-left 1000ms ease-in 400ms both;
 }
-
-.hero__text {
+.hero .hero__container .hero__text {
   width: 508px;
   margin-bottom: 41px;
   font-family: "Roboto";
@@ -165,8 +159,7 @@ button:hover {
   line-height: 1.17;
   color: #ffffff;
 }
-
-.hero__button {
+.hero .hero__container .hero__button {
   padding: 20px 61px;
   border-radius: 10px;
   border: none;
@@ -177,7 +170,6 @@ button:hover {
   background-color: #8e32c6;
   animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
 }
-
 @keyframes ranToTop {
   0% {
     transform: translateY(250px) scale(0.5) rotate(180deg);
@@ -186,7 +178,7 @@ button:hover {
     transform: translateY(0);
   }
 }
-.hero__image {
+.hero .hero__container .hero__image {
   position: absolute;
   left: 478px;
   /* top: 387px; */
@@ -204,34 +196,29 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.proses__list {
+.proses__section .proses__list {
   display: flex;
   justify-content: center;
   gap: 90px;
 }
-
-.proses__item {
+.proses__section .proses__list .proses__item {
   width: 300px;
   height: 470px;
   background-image: url(../../images/proses-line.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.proses__box {
+.proses__section .proses__list .proses__item .proses__box {
   display: flex;
   align-items: center;
 }
-
-.proses__text {
+.proses__section .proses__list .proses__item .proses__box .proses__text {
   font-family: "Salsa";
   font-size: 170px;
   /* line-height: 1.69; */
   color: #ffffff;
 }
-
-.proses__title {
+.proses__section .proses__list .proses__item .proses__box .proses__title {
   margin-left: 5px;
   font-family: "Playfair Display";
   font-size: 36px;
@@ -245,49 +232,23 @@ button:hover {
   background-image: url(../../images/boots-bg.jpg);
   background-repeat: no-repeat;
 }
-
-.boots__container {
+.boots .boots__container {
   position: relative;
   padding-top: 42px;
   padding-bottom: 97px;
 }
-
-.boots__box {
+.boots .boots__container .boots__box {
   display: flex;
 }
-
-.boots__img {
+.boots .boots__container .boots__box .boots__img {
   width: 835px;
   height: 400px;
 }
-
-.boots__title {
+.boots .boots__container .boots__box .boots__title {
   margin-left: auto;
   font-family: "Playfair Display";
   font-size: 28px;
   line-height: 1.35;
-  color: #ffffff;
-}
-
-.boots__content {
-  padding-left: 55px;
-  padding-top: 38px;
-}
-
-.boots__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 26px 65px;
-  width: 715px;
-  height: 85px;
-  background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
-  border-radius: 15px;
-}
-
-.boots__text {
-  font-family: "Roboto";
-  font-size: 28px;
-  line-height: 1.18;
   color: #ffffff;
 }
 
@@ -307,6 +268,26 @@ button:hover {
   right: -11px;
   width: 403px;
   height: 183px;
+}
+
+.boots__content {
+  padding-left: 55px;
+  padding-top: 38px;
+}
+.boots__content .boots__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 65px;
+  width: 715px;
+  height: 85px;
+  background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
+  border-radius: 15px;
+}
+.boots__content .boots__list .boots__item .boots__text {
+  font-family: "Roboto";
+  font-size: 28px;
+  line-height: 1.18;
+  color: #ffffff;
 }
 
 .reviews {
