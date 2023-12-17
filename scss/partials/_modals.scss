@@ -4,6 +4,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   opacity: 1;
@@ -18,22 +19,23 @@
 }
 
 .modal__window {
-  background-image: url(../../images/modal-flowers.webp),
-    url(../../images/modal-bg.webp);
-  margin: auto;
-  background-repeat: no-repeat;
-  background-position: bottom left, center;
-  background-size: 355px 455px, cover;
-  width: 100%;
-  max-width: 1440px;
-  padding-top: 101px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 117px;
-  overflow: scroll;
+
   height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 101px;
+  padding-bottom: 117px;
+  margin: auto;
+
+  background-image: url(../../images/modal-flowers.webp), url(../../images/modal-bg.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left, center;
+  background-size: 355px 455px, cover;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
 }
 
 .no-scroll {
@@ -48,6 +50,9 @@
   position: absolute;
   top: 50px;
   right: 50px;
+
+  padding: 20px 49px 20px 48px;
+  border-radius: 16px;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 24px;
@@ -55,16 +60,13 @@
   border: none;
   color: #ffffff;
   background-color: #8e32c6;
-  padding: 20px 49px 20px 48px;
-  border-radius: 16px;
-
 }
 
 .form-content {
   width: 575px;
   height: 280px;
-  background: rgba(168, 168, 168, 0.26);
   padding: 15px 14px 22px 19px;
+  background: rgba(168, 168, 168, 0.26);
 }
 
 .modal__text {
@@ -80,10 +82,10 @@
 
 .modal__payment {
   margin-top: 10px;
+  margin-right: 65px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-right: 65px;
 }
 
 .modal__payment div{
@@ -98,13 +100,14 @@
 }
 
 .modal__card {
+  width: 194px;
+  height: 32px;
+  border: 1px solid #000;
+
   color: #808080;
   font-size: 18px;
   font-weight: 400;
   background: #2C4D74;
-  border: 1px solid #000;
-  width: 194px;
-  height: 32px;
   display: block;
 }
 
@@ -115,10 +118,11 @@
 }
 
 .modal__expired {
-  background: #2C4D74;
-  border: 1px solid #000;
   width: 66px;
   height: 32px;
+  border: 1px solid #000;
+
+  background: #2C4D74;
   display: block;
 }
 
@@ -129,17 +133,19 @@
 }
 
 .modal__code {
-  background: #2C4D74;
-  border: 1px solid #000;
   width: 66px;
   height: 32px;
+  border: 1px solid #000;
+
+  background: #2C4D74;
   display: block;
 }
 
 .modal__img {
   margin-top: 16px;
-  flex-direction: column;
+
   display: flex;
+  flex-direction: column;
   justify-content: end;
 }
 
@@ -151,21 +157,25 @@
 .modal__visa {
   width: 125.656px;
   height: 90.647px;
-  background: #fff;
   padding: 28px 10px 28px 10px;
+
+  background: #fff;
 }
 
 .modal__mastercard {
-  background: #fff;
-  padding: 13px 10px 13px 9px;
   width: 125.656px;
   height: 90.647px;
+  padding: 13px 10px 13px 9px;
+
+  background: #fff;
 }
 
 
 .checkbox-box {
   position: relative;
+
   margin-top: 80px;
+
   display: flex;
   justify-content: flex-end;
   gap: 5px;
@@ -181,14 +191,17 @@
 }
 
 .modal__custom {
-  display: flex;
   position: absolute;
-  justify-content: center;
-  background-color: #8e32c6;
-  align-items: center;
+  right: 125px;
+
   width: 20px;
   height: 20px;
-  right: 125px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #8e32c6;
 }
 
 .modal__check {
@@ -204,13 +217,15 @@
 }
 
 .modal__order {
+  margin-top: 25px;
+  margin-bottom: 18px;
+
+  display: flex;
+  justify-content: center;
+
   color: #fff;
   font-size: 36px;
   font-weight: 400;
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 18px;
 }
 
 .modal__label {
@@ -221,15 +236,16 @@
 .modal__name {
   width: 580px;
   height: 50px;
+  padding: 7px 108px 8px 22px;
+  margin-bottom: 28px;
   border-radius: 50px;
   border: 1px solid #000;
+
   background: #FFF;
-  margin-bottom: 28px;
   color: #959595;
   font-family: Roboto;
   font-size: 28px;
   font-weight: 400;
-  padding: 7px 108px 8px 22px;
 }
 
 .modal__name:hover,
@@ -239,11 +255,12 @@
 }
 
 .modal__icon {
-  width: 50px;
-  height: 50px;
   position: absolute;
   top: 0;
   right: 5px;
+
+  width: 50px;
+  height: 50px;
 }
 
 .modal__name:focus+.modal__icon,
@@ -253,6 +270,7 @@
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -264,22 +282,21 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
   color: #959595;
-
 }
 
 .modal__size {
   width: 580px;
   height: 50px;
-  border-radius: 50px;
+  padding: 7px 313px 8px 22px;
+  margin-bottom: 27px;
   border: 1px solid #000;
+  border-radius: 50px;
+
   background: #FFF;
   color: #959595;
-
   font-family: Roboto;
   font-size: 28px;
   font-weight: 400;
-  padding: 7px 313px 8px 22px;
-  margin-bottom: 27px;
 }
 
 .modal__border {
@@ -291,7 +308,6 @@
   align-items: center;
   margin-left: 180px;
   margin-right: 180px;
-
 }
 
 .modal__sneaker {
@@ -300,26 +316,27 @@
 }
 
 .modal__price {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 400;
   display: flex;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 25px;
+
+  color: #fff;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .modal__button {
-  border-radius: 10px;
-  background: #8e32c6;
   width: 255px;
   height: 70px;
+  margin-left: 163px;
+  margin-right: 162px;
+  border-radius: 10px;
+  
+  background: #8e32c6;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
-  margin-left: 163px;
-  margin-right: 162px;
-
 }
 
 

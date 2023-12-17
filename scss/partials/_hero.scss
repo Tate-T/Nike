@@ -1,6 +1,7 @@
 .hero {
   margin: 0 auto;
   max-width: 1440px;
+
   background-image: url(../../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -10,12 +11,17 @@
 
 .hero__container {
   position: relative;
+
   padding-bottom: 286px;
+}
+
+.hero__logo {
+  width: 160px;
+  height: 120px;
 }
 
 .hero__abr {
   font-family: $second-font;
-  
   font-size: 48px;
   line-height: 1.33;
   color: $main-color;
@@ -23,7 +29,6 @@
 
 .hero__title {
   font-family: "Playfair Display";
-  
   font-size: 144px;
   line-height: 1.33;
   color: $main-color;
@@ -55,38 +60,39 @@
   }
 }
 .hero__subtitle {
+  position: relative;
+
+  margin-bottom: 12px;
+  z-index: 3;
+
   font-family: "Playfair Display";
-  
   font-size: 72px;
   line-height: 1.36;
   color: $main-color;
-  margin-bottom: 12px;
-  z-index: 3;
-  position: relative;
 
   animation: run-to-left 1000ms ease-in 400ms both;
 }
 
 .hero__text {
+  width: 508px;
+  margin-bottom: 41px;
+
   font-family: $main-font;
-  
   font-size: $main-font-size;
   line-height: 1.17;
   color: $main-color;
-  width: 508px;
-  margin-bottom: 41px;
 }
 
 .hero__button {
+  padding: 20px 61px;
+  border-radius: 10px;
+  border: none;
+
   font-family: $main-font;
-  
   font-size: 24px;
   line-height: 1.17;
   color: $main-color;
-  padding: 20px 61px;
   background-color: #8e32c6;
-  border-radius: 10px;
-  border: none;
 
   animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
 }
@@ -104,18 +110,15 @@
   }
 }
 
-.hero__logo {
-  width: 160px;
-  height: 120px;
-}
-
 .hero__image {
-  width: 837px;
-  height: 403px;
-  transform-origin: bottom left;
-  transform: rotate(-30deg);
   position: absolute;
   left: 478px;
   /* top: 387px; */
   bottom: 0;
+  
+  width: 837px;
+  height: 403px;
+
+  transform-origin: bottom left;
+  transform: rotate(-30deg);
 }
