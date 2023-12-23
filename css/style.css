@@ -101,17 +101,17 @@ button:hover {
   position: relative;
   padding-bottom: 286px;
 }
-.hero .hero__container .hero__logo {
+.hero .hero__logo {
   width: 160px;
   height: 120px;
 }
-.hero .hero__container .hero__abr {
+.hero .hero__abr {
   font-family: "PT Serif";
   font-size: 48px;
   line-height: 1.33;
   color: #ffffff;
 }
-.hero .hero__container .hero__title {
+.hero .hero__title {
   font-family: "Playfair Display";
   font-size: 144px;
   line-height: 1.33;
@@ -141,7 +141,7 @@ button:hover {
     opacity: 1;
   }
 }
-.hero .hero__container .hero__subtitle {
+.hero .hero__subtitle {
   position: relative;
   margin-bottom: 12px;
   z-index: 3;
@@ -151,7 +151,7 @@ button:hover {
   color: #ffffff;
   animation: run-to-left 1000ms ease-in 400ms both;
 }
-.hero .hero__container .hero__text {
+.hero .hero__text {
   width: 508px;
   margin-bottom: 41px;
   font-family: "Roboto";
@@ -159,7 +159,7 @@ button:hover {
   line-height: 1.17;
   color: #ffffff;
 }
-.hero .hero__container .hero__button {
+.hero .hero__button {
   padding: 20px 61px;
   border-radius: 10px;
   border: none;
@@ -178,7 +178,7 @@ button:hover {
     transform: translateY(0);
   }
 }
-.hero .hero__container .hero__image {
+.hero .hero__image {
   position: absolute;
   left: 478px;
   /* top: 387px; */
@@ -232,26 +232,44 @@ button:hover {
   background-image: url(../../images/boots-bg.jpg);
   background-repeat: no-repeat;
 }
-.boots .boots__container {
+.boots__container {
   position: relative;
   padding-top: 42px;
   padding-bottom: 97px;
 }
-.boots .boots__container .boots__box {
+.boots__box {
   display: flex;
 }
-.boots .boots__container .boots__box .boots__img {
+.boots__img {
   width: 835px;
   height: 400px;
 }
-.boots .boots__container .boots__box .boots__title {
+.boots__title {
   margin-left: auto;
   font-family: "Playfair Display";
   font-size: 28px;
   line-height: 1.35;
   color: #ffffff;
 }
-
+.boots__content {
+  padding-left: 55px;
+  padding-top: 38px;
+}
+.boots__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 65px;
+  width: 715px;
+  height: 85px;
+  background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
+  border-radius: 15px;
+}
+.boots__text {
+  font-family: "Roboto";
+  font-size: 28px;
+  line-height: 1.18;
+  color: #ffffff;
+}
 .boots__border {
   position: absolute;
   top: 258px;
@@ -261,33 +279,12 @@ button:hover {
   border-radius: 50%;
   border: 2px solid #fff;
 }
-
 .boots__line {
   position: absolute;
   top: 95px;
   right: -11px;
   width: 403px;
   height: 183px;
-}
-
-.boots__content {
-  padding-left: 55px;
-  padding-top: 38px;
-}
-.boots__content .boots__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 26px 65px;
-  width: 715px;
-  height: 85px;
-  background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
-  border-radius: 15px;
-}
-.boots__content .boots__list .boots__item .boots__text {
-  font-family: "Roboto";
-  font-size: 28px;
-  line-height: 1.18;
-  color: #ffffff;
 }
 
 .reviews {
