@@ -91,7 +91,7 @@ button:hover {
 .hero {
   margin: 0 auto;
   max-width: 1440px;
-  background-image: url(./images/hero-bg.jpg);
+  background-image: url(../../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -192,7 +192,7 @@ button:hover {
 .proses__section {
   padding-top: 55px;
   padding-bottom: 80px;
-  background-image: url(./images/proses-bg.jpg);
+  background-image: url(../../images/proses-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -204,7 +204,7 @@ button:hover {
 .proses__section .proses__list .proses__item {
   width: 300px;
   height: 470px;
-  background-image: url(./images/proses-line.png);
+  background-image: url(../../images/proses-line.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -229,7 +229,7 @@ button:hover {
 .boots {
   margin: 0 auto;
   max-width: 1440px;
-  background-image: url(./images/boots-bg.jpg);
+  background-image: url(../../images/boots-bg.jpg);
   background-repeat: no-repeat;
 }
 .boots__container {
@@ -290,7 +290,7 @@ button:hover {
 .reviews {
   padding-top: 30px;
   padding-bottom: 88px;
-  background-image: url(./images/reviews-bc.jpg);
+  background-image: url(../../images/reviews-bc.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -380,7 +380,7 @@ button:hover {
   padding-top: 21px;
   padding-bottom: 38px;
   margin: auto;
-  background-image: url(./images/order-bc.jpg);
+  background-image: url(../../images/order-bc.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -578,7 +578,7 @@ button:hover {
   padding-top: 101px;
   padding-bottom: 117px;
   margin: auto;
-  background-image: url(./images/modal-flowers.webp), url(./images/modal-bg.webp);
+  background-image: url(../../images/modal-flowers.webp), url(../../images/modal-bg.webp);
   background-repeat: no-repeat;
   background-position: bottom left, center;
   background-size: 355px 455px, cover;
