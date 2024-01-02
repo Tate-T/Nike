@@ -229,7 +229,7 @@ button:hover {
 .boots {
   margin: 0 auto;
   max-width: 1440px;
-  background-image: url(../../images/boots-bg.jpg);
+  background-image: url(../images/boots-bg.jpg);
   background-repeat: no-repeat;
 }
 .boots__container {
