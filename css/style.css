@@ -4,11 +4,16 @@
 }
 
 .container {
-  width: 1130px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1130px;
+  }
 }
 
 h1,
@@ -61,11 +66,33 @@ button:hover {
   width: 100px;
   height: 60px;
 }
+.header__menu {
+  border: none;
+  background-color: transparent;
+  width: 45px;
+  height: 25px;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__svg {
+  width: 45px;
+  height: 25px;
+  fill: #8E32C6;
+}
 .header__pages {
-  display: flex;
+  display: none;
   gap: 29px;
   margin-left: 152px;
   padding-bottom: 33px;
+}
+@media screen and (min-width: 1200px) {
+  .header__pages {
+    display: flex;
+  }
 }
 .header__link {
   font-family: "Roboto";
@@ -75,10 +102,15 @@ button:hover {
   color: #c7c7c7;
 }
 .header__list {
-  display: flex;
+  display: none;
   gap: 12px;
   margin-left: auto;
   padding-bottom: 33px;
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+  }
 }
 .header__item {
   font-family: "Roboto";

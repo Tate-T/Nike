@@ -13,12 +13,34 @@
     width: 100px;
     height: 60px;
   }
+
+ &__menu{
+    border: none;
+    background-color: transparent;
+    width: 45px;
+    height: 25px;
+    margin-left: auto;
+
+    @media screen and (min-width: 1200px){
+      display: none;
+    }
+  }
+
+&__svg{
+  width: 45px;
+  height: 25px;
+  fill: #8E32C6;
+}
   
   &__pages {
-    display: flex;
+    display: none;
     gap: 29px;
     margin-left: 152px;
     padding-bottom: 33px;
+
+    @media screen and (min-width: 1200px){
+      display: flex;
+    }
   }
   
   &__link {
@@ -30,10 +52,14 @@
   }
   
   &__list {
-    display: flex;
+    display: none;
     gap: 12px;
     margin-left: auto;
     padding-bottom: 33px;
+
+    @media screen and (min-width: 1200px){
+      display: flex;
+    }
   }
   
   &__item {
@@ -43,6 +69,7 @@
     line-height: 1.17;
   
     color: #dcdcdc;
+
   }
 }
 
