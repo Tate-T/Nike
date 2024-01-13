@@ -1,21 +1,3 @@
-* {
-  font-family: "Roboto";
-  font-weight: 400;
-}
-
-.container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1130px;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -46,6 +28,8 @@ img {
 button {
   cursor: pointer;
   transition: background-color 250ms linear 100ms, box-shadow 300ms linear 100ms, transform 500ms linear 100ms;
+  display: block;
+  border: none;
 }
 
 button:hover {
@@ -54,9 +38,36 @@ button:hover {
   transform: scale(1.025);
 }
 
+* {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1130px;
+  }
+}
+
 .header {
   padding-top: 30px;
-  background-color: #012d63;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    background-color: #012d63;
+  }
 }
 .header__container {
   display: flex;
@@ -120,6 +131,12 @@ button:hover {
   color: #dcdcdc;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    padding-top: 81px;
+  }
+}
+
 .hero {
   margin: 0 auto;
   max-width: 1440px;
@@ -129,26 +146,38 @@ button:hover {
   background-size: cover;
   background-color: lightgray;
 }
-.hero .hero__container {
+.hero__container {
   position: relative;
   padding-bottom: 286px;
+  overflow: hidden;
 }
-.hero .hero__logo {
+.hero__logo {
   width: 160px;
   height: 120px;
+  display: none;
 }
-.hero .hero__abr {
+@media screen and (min-width: 1200px) {
+  .hero__logo {
+    display: block;
+  }
+}
+.hero__abr {
   font-family: "PT Serif";
   font-size: 48px;
   line-height: 1.33;
   color: #ffffff;
 }
-.hero .hero__title {
+.hero__title {
   font-family: "Playfair Display";
-  font-size: 144px;
+  font-size: 64px;
   line-height: 1.33;
   color: #ffffff;
   animation: title-to-right 2000ms ease-out 400ms both;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 144px;
+  }
 }
 @keyframes title-to-right {
   0% {
@@ -173,34 +202,49 @@ button:hover {
     opacity: 1;
   }
 }
-.hero .hero__subtitle {
+.hero__subtitle {
   position: relative;
   margin-bottom: 12px;
   z-index: 3;
   font-family: "Playfair Display";
-  font-size: 72px;
+  font-size: 36px;
   line-height: 1.36;
   color: #ffffff;
   animation: run-to-left 1000ms ease-in 400ms both;
 }
-.hero .hero__text {
-  width: 508px;
+@media screen and (min-width: 1200px) {
+  .hero__subtitle {
+    font-size: 72px;
+  }
+}
+.hero__text {
+  max-width: 508px;
   margin-bottom: 41px;
   font-family: "Roboto";
   font-size: 18px;
   line-height: 1.17;
   color: #ffffff;
 }
-.hero .hero__button {
-  padding: 20px 61px;
+.hero__button {
+  max-width: 238px;
+  padding: 15px 53px;
   border-radius: 10px;
-  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   font-family: "Roboto";
   font-size: 24px;
   line-height: 1.17;
   color: #ffffff;
   background-color: #8e32c6;
   animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 20px 61px;
+    max-width: 254px;
+    margin: 0;
+  }
 }
 @keyframes ranToTop {
   0% {
@@ -209,16 +253,6 @@ button:hover {
   100% {
     transform: translateY(0);
   }
-}
-.hero .hero__image {
-  position: absolute;
-  left: 478px;
-  /* top: 387px; */
-  bottom: 0;
-  width: 837px;
-  height: 403px;
-  transform-origin: bottom left;
-  transform: rotate(-30deg);
 }
 
 .proses__section {

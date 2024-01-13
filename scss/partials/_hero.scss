@@ -1,124 +1,155 @@
+body {
+  @media screen and (min-width: 1200px) {
+    padding-top: 81px;
+  }
+}
+
 .hero {
   margin: 0 auto;
   max-width: 1440px;
 
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/hero-bg.jpg) ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: lightgray;
 
-  .hero__container {
+  &__container {
+    position: relative;
+    padding-bottom: 286px;
+    overflow: hidden;
+  }
+  &__logo {
+    width: 160px;
+    height: 120px;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &__abr {
+    font-family: $second-font;
+    font-size: 48px;
+    line-height: 1.33;
+    color: $main-color;
+  }
+
+  &__title {
+    font-family: "Playfair Display";
+    font-size: 64px;
+    line-height: 1.33;
+    color: $main-color;
+
+    animation: title-to-right 2000ms ease-out 400ms both;
+
+    @media screen and (min-width:1200px) {
+      font-size: 144px;
+    }
+  }
+
+  @keyframes title-to-right {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    50% {
+      text-shadow: 2px 3px 4px violet;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes run-to-left {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  &__subtitle {
     position: relative;
 
-    padding-bottom: 286px;
-  }
-    .hero__logo {
-      width: 160px;
-      height: 120px;
-    }
+    margin-bottom: 12px;
+    z-index: 3;
 
-    .hero__abr {
-      font-family: $second-font;
-      font-size: 48px;
-      line-height: 1.33;
-      color: $main-color;
-    }
+    font-family: "Playfair Display";
+    font-size: 36px;
+    line-height: 1.36;
+    color: $main-color;
 
-    .hero__title {
-      font-family: "Playfair Display";
-      font-size: 144px;
-      line-height: 1.33;
-      color: $main-color;
+    animation: run-to-left 1000ms ease-in 400ms both;
 
-      animation: title-to-right 2000ms ease-out 400ms both;
-    }
-
-    @keyframes title-to-right {
-      0% {
-        transform: translateX(-200px);
-        opacity: 0;
-      }
-      50% {
-        text-shadow: 2px 3px 4px violet;
-      }
-      100% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    @keyframes run-to-left {
-      0% {
-        transform: translateX(1000px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    .hero__subtitle {
-      position: relative;
-
-      margin-bottom: 12px;
-      z-index: 3;
-
-      font-family: "Playfair Display";
+    @media screen and (min-width: 1200px) {
       font-size: 72px;
-      line-height: 1.36;
-      color: $main-color;
-
-      animation: run-to-left 1000ms ease-in 400ms both;
     }
+  }
 
-    .hero__text {
-      width: 508px;
-      margin-bottom: 41px;
+  &__text {
+    max-width: 508px;
+    margin-bottom: 41px;
 
-      font-family: $main-font;
-      font-size: $main-font-size;
-      line-height: 1.17;
-      color: $main-color;
-    }
+    font-family: $main-font;
+    font-size: $main-font-size;
+    line-height: 1.17;
+    color: $main-color;
+  }
 
-    .hero__button {
+  &__button {
+    max-width: 238px;
+    padding: 15px 53px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    font-family: $main-font;
+    font-size: 24px;
+    line-height: 1.17;
+    color: $main-color;
+    background-color: #8e32c6;
+
+    animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
+
+    @media screen and (min-width: 1200px) {
       padding: 20px 61px;
-      border-radius: 10px;
-      border: none;
+      max-width: 254px;
+      margin: 0;
+    }
+  }
 
-      font-family: $main-font;
-      font-size: 24px;
-      line-height: 1.17;
-      color: $main-color;
-      background-color: #8e32c6;
-
-      animation: ranToTop 1.5s cubic-bezier(0.16, 0.95, 0.28, 0.82) 400ms both;
+  @keyframes ranToTop {
+    0% {
+      transform: translateY(250px) scale(0.5) rotate(180deg);
     }
 
-    @keyframes ranToTop {
-      0% {
-        transform: translateY(250px) scale(0.5) rotate(180deg);
-      }
-
-      50% {
-      }
-
-      100% {
-        transform: translateY(0);
-      }
+    50% {
     }
 
-    .hero__image {
-      position: absolute;
-      left: 478px;
-      /* top: 387px; */
-      bottom: 0;
-
-      width: 837px;
-      height: 403px;
-
-      transform-origin: bottom left;
-      transform: rotate(-30deg);
+    100% {
+      transform: translateY(0);
     }
-  
+  }
+
+  // &__image {
+  //   position: absolute;
+  //   left: -6px;
+  //   /* top: 387px; */
+  //   bottom: 0;
+
+  //   width: 837px;
+  //   height: 403px;
+
+  //   transform-origin: bottom left;
+  //   transform: rotate(-30deg);
+
+  //   @media screen and (min-width:1200px) {
+  //     left: 478px;
+  //   }
+  // }
 }

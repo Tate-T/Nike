@@ -1,8 +1,14 @@
 .header {
   padding-top: 30px;
-
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   
-  background-color: #012d63;
+  @media screen and (min-width:1200px) {
+    background-color: #012d63;
+  }
 
   &__container {
     display: flex;
