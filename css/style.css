@@ -309,20 +309,41 @@ button:hover {
 .boots {
   margin: 0 auto;
   max-width: 1440px;
-  background-image: url(../images/boots-bg.jpg);
   background-repeat: no-repeat;
+  background-image: url(../../images/boots-flowers1.png), url(../../images/boots-flowers2.png), url(../../images/boots-bg-mob.jpg);
+  background-position: 0px 164px, right 125px, center;
+  background-size: 96px 197px, 140px 252px, cover;
+}
+@media screen and (min-width: 1200px) {
+  .boots {
+    background-image: url(../images/boots-bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
 }
 .boots__container {
   position: relative;
-  padding-top: 42px;
-  padding-bottom: 97px;
+  padding-top: 21px;
+  padding-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .boots__container {
+    padding-top: 42px;
+    padding-bottom: 97px;
+  }
 }
 .boots__box {
   display: flex;
 }
 .boots__img {
-  width: 835px;
-  height: 400px;
+  width: 297px;
+  height: 143px;
+}
+@media screen and (min-width: 1200px) {
+  .boots__img {
+    width: 835px;
+    height: 400px;
+  }
 }
 .boots__title {
   margin-left: auto;
@@ -360,11 +381,17 @@ button:hover {
   border: 2px solid #fff;
 }
 .boots__line {
+  display: none;
   position: absolute;
   top: 95px;
   right: -11px;
   width: 403px;
   height: 183px;
+}
+@media screen and (min-width: 1200px) {
+  .boots__line {
+    display: block;
+  }
 }
 
 .reviews {
