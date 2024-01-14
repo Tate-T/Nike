@@ -255,36 +255,50 @@ button:hover {
   }
 }
 
-.proses__section {
-  padding-top: 55px;
-  padding-bottom: 80px;
-  background-image: url(../images/proses-bg.jpg);
+.proses {
+  padding-bottom: 11px;
+  background-color: #021635;
   background-repeat: no-repeat;
   background-position: center;
 }
-.proses__section .proses__list {
+@media screen and (min-width: 1200px) {
+  .proses {
+    padding-top: 56px;
+    padding-bottom: 80px;
+    background-image: url(../images/proses-bg.jpg);
+    background-color: transparent;
+  }
+}
+.proses__list {
+  flex-direction: column;
   display: flex;
   justify-content: center;
-  gap: 90px;
+  gap: 25px;
 }
-.proses__section .proses__list .proses__item {
+@media screen and (min-width: 1200px) {
+  .proses__list {
+    flex-direction: row;
+    gap: 90px;
+  }
+}
+.proses__item {
   width: 300px;
   height: 470px;
   background-image: url(../images/proses-line.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-.proses__section .proses__list .proses__item .proses__box {
+.proses__box {
   display: flex;
   align-items: center;
 }
-.proses__section .proses__list .proses__item .proses__box .proses__text {
+.proses__text {
   font-family: "Salsa";
   font-size: 170px;
   /* line-height: 1.69; */
   color: #ffffff;
 }
-.proses__section .proses__list .proses__item .proses__box .proses__title {
+.proses__title {
   margin-left: 5px;
   font-family: "Playfair Display";
   font-size: 36px;
