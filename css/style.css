@@ -56,6 +56,95 @@ button:hover {
   }
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 44px 27px 114px 27px;
+  opacity: 0.9;
+  background-color: #021635;
+  z-index: 3;
+}
+
+.menu__btn {
+  fill: #8E32C6;
+  background-color: transparent;
+  width: 45px;
+  height: 25px;
+  margin-left: auto;
+}
+
+.menu__svg {
+  width: 45px;
+  height: 25px;
+}
+
+.menu__pages {
+  display: flex;
+  justify-content: center;
+  gap: 57px;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.menu__link {
+  color: #C7C7C7;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 58px;
+  gap: 10px;
+}
+
+.menu__item {
+  color: #C7C7C7;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.menu__item:hover, .menu__item:focus {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu__item:hover, .menu__item:focus {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu__link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   padding-top: 30px;
   position: fixed;
@@ -669,7 +758,7 @@ button:hover {
   transition: opacity 350ms linear 100ms, visibility 250ms linear 100ms;
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;

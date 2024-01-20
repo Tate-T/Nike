@@ -23,7 +23,7 @@
       <a class="header__logo" href="./index.html">
         <img class="header__nike" src="./images/logo.png" alt="nike-logo" />
       </a>
-      <button class="header__menu">
+      <button data-menu-open class="header__menu">
         <svg class="header__svg">
           <use href="./images/icons.svg#icon-Frame-6"></use>
         </svg>
@@ -295,7 +295,37 @@
       </div>
     </div>
   </div> -->
-  <script src="./js/modal.js"></script>
+  <div data-menu class="menu is-hidden">
+    <button data-menu-close type="button" class="menu__btn">
+      <svg class="menu__svg">
+        <use href="./images/icons.svg#icon-Frame-6"></use>
+      </svg>
+    </button  >
+    <ul class="menu__pages">
+      <li class="menu__page">
+        <a class="menu__link" href="#">Main page</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__link" href="#">Benefits</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__link" href="#">Advantages</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__link" href="#">Reviews</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__link" href="#">Contacts</a>
+      </li>
+      <li class="menu__page"><a class="menu__link" href="#">Order</a></li>
+    </ul>
+    <ul class="menu__list">
+      <li class="menu__item">Ukr</li>
+      <li class="menu__item">Eng</li>
+    </ul>
+  </div>
+  <script src="./js/modal.js" type="modal"></script>
+  <script src="./js/menu.js" type="modal"></script>
 </body>
 
 </html>
