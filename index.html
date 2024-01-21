@@ -23,11 +23,21 @@
       <a class="header__logo" href="./index.html">
         <img class="header__nike" src="./images/logo.png" alt="nike-logo" />
       </a>
-      <button data-menu-open class="header__menu">
+      <!-- <button data-menu-open class="header__menu">
         <svg class="header__svg">
           <use href="./images/icons.svg#icon-Frame-6"></use>
         </svg>
-      </button>
+      </button> -->
+      <input type="checkbox" class="header__menu-btn" id="toggle">
+      <label for="toggle" class="header__btn">
+        <svg class="header__svg">
+          <use href="./images/icons.svg#icon-Frame-6"></use>
+        </svg>
+        <svg class="header__close">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+        
+      </label>
       <ul class="header__pages">
         <li class="header__page">
           <a class="header__link" href="#">Main page</a>
@@ -295,7 +305,7 @@
       </div>
     </div>
   </div> -->
-  <div data-menu class="menu is-hidden">
+  <!-- <div data-menu class="menu is-hidden">
     <button data-menu-close type="button" class="menu__btn">
       <svg class="menu__svg">
         <use href="./images/icons.svg#icon-Frame-6"></use>
@@ -323,7 +333,9 @@
       <li class="menu__item">Ukr</li>
       <li class="menu__item">Eng</li>
     </ul>
-  </div>
+  </div> -->
+
+
   <script src="./js/modal.js" type="modal"></script>
   <script src="./js/menu.js" type="modal"></script>
 </body>

@@ -4,7 +4,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
   
   @media screen and (min-width:1200px) {
     background-color: #012d63;
@@ -41,11 +41,11 @@
   &__pages {
     display: none;
     gap: 29px;
-    margin-left: 152px;
     padding-bottom: 33px;
 
     @media screen and (min-width: 1200px){
       display: flex;
+      margin-left: 152px;
     }
   }
   
