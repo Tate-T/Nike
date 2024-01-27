@@ -163,7 +163,7 @@ button:hover {
 .header__svg {
   width: 45px;
   height: 25px;
-  fill: #8E32C6;
+  fill: #8e32c6;
 }
 .header__pages {
   display: none;
@@ -417,51 +417,91 @@ button:hover {
   }
 }
 .boots__title {
+  position: absolute;
+  top: 263px;
+  left: 67px;
   margin-left: auto;
   font-family: "Playfair Display";
-  font-size: 28px;
+  font-size: 14px;
   line-height: 1.35;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .boots__title {
+    position: static;
+    font-size: 28px;
+  }
+}
 .boots__content {
-  padding-left: 55px;
-  padding-top: 38px;
+  margin: 179px 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .boots__content {
+    padding-left: 55px;
+    padding-top: 38px;
+  }
 }
 .boots__list {
   display: flex;
   justify-content: space-between;
-  padding: 26px 65px;
-  width: 715px;
-  height: 85px;
+  width: 305px;
+  height: 37px;
+  padding: 11px 9px;
   background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
-  border-radius: 15px;
+  border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .boots__list {
+    padding: 26px 65px;
+    width: 715px;
+    height: 85px;
+    border-radius: 15px;
+  }
 }
 .boots__text {
   font-family: "Roboto";
-  font-size: 28px;
+  font-size: 14px;
   line-height: 1.18;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .boots__text {
+    font-size: 28px;
+  }
+}
 .boots__border {
   position: absolute;
-  top: 258px;
-  right: 371px;
-  width: 130px;
-  height: 130px;
+  top: 98px;
+  right: 85px;
+  width: 47px;
+  height: 43px;
   border-radius: 50%;
   border: 2px solid #fff;
 }
+@media screen and (min-width: 1200px) {
+  .boots__border {
+    top: 258px;
+    right: 371px;
+    width: 130px;
+    height: 130px;
+  }
+}
 .boots__line {
-  display: none;
   position: absolute;
-  top: 95px;
-  right: -11px;
-  width: 403px;
-  height: 183px;
+  top: 140px;
+  left: 66px;
+  width: 185px;
+  height: 145px;
+  transform: rotate(180deg);
 }
 @media screen and (min-width: 1200px) {
   .boots__line {
-    display: block;
+    top: 95px;
+    right: -11px;
+    left: 0;
+    width: 403px;
+    height: 183px;
+    transform: rotate(0deg);
   }
 }
 

@@ -5,8 +5,8 @@
   top: 0;
   width: 100%;
   z-index: 5;
-  
-  @media screen and (min-width:1200px) {
+
+  @media screen and (min-width: 1200px) {
     background-color: #012d63;
   }
 
@@ -14,41 +14,41 @@
     display: flex;
     align-items: center;
   }
-  
+
   &__nike {
     width: 100px;
     height: 60px;
   }
 
- &__menu{
+  &__menu {
     border: none;
     background-color: transparent;
     width: 45px;
     height: 25px;
     margin-left: auto;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       display: none;
     }
   }
 
-&__svg{
-  width: 45px;
-  height: 25px;
-  fill: #8E32C6;
-}
-  
+  &__svg {
+    width: 45px;
+    height: 25px;
+    fill: #8e32c6;
+  }
+
   &__pages {
     display: none;
     gap: 29px;
     padding-bottom: 33px;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       display: flex;
       margin-left: 152px;
     }
   }
-  
+
   &__link {
     font-family: $main-font;
     font-weight: 300;
@@ -56,26 +56,24 @@
     line-height: 1.17;
     color: #c7c7c7;
   }
-  
+
   &__list {
     display: none;
     gap: 12px;
     margin-left: auto;
     padding-bottom: 33px;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       display: flex;
     }
   }
-  
+
   &__item {
     font-family: $main-font;
     font-weight: 300;
     font-size: 24px;
     line-height: 1.17;
-  
-    color: #dcdcdc;
 
+    color: #dcdcdc;
   }
 }
-
