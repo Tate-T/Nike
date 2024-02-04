@@ -21,7 +21,11 @@
   <header class="header">
     <div class="container header__container">
       <a class="header__logo" href="./index.html">
+        <picture>
+          <source srcset="./images/desktop/logo@1x.webp 1x, ./images/desktop/logo@2x.webp 2x" media="(min-width: 1200px)">
+          <source srcset="./images/mobile/logo@1x.webp 1x, ./images/mobile/logo@2x.webp 2x" media="(min-width: 320px)">
         <img class="header__nike" src="./images/logo.png" alt="nike-logo" />
+      </picture>
       </a>
       <!-- <button data-menu-open class="header__menu">
         <svg class="header__svg">
@@ -86,21 +90,33 @@
               <p class="proses__text">1</p>
               <h3 class="proses__title">Premium Quality</h3>
             </div>
-            <img class="proses__image" src="./images/proses-1.png" alt="Premium Quality" />
+            <picture>
+              <source srcset="./images/desktop/proses-1@1x.webp 1x, ./images/desktop/proses-1@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./images/mobile/proses-1@1x.webp 1x, ./images/mobile/proses-1@2x.webp 2x" media="(min-width: 320px)">
+              <img class="proses__image" src="./images/proses-1.png" alt="Premium Quality" />
+          </picture>
           </li>
           <li class="proses__item">
             <div class="proses__box">
               <p class="proses__text">2</p>
               <h3 class="proses__title">indelible paint</h3>
             </div>
+            <picture>
+              <source srcset="./images/desktop/proses-2@1x.webp 1x, ./images/desktop/proses-2@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./images/mobile/proses-2@1x.webp 1x, ./images/mobile/proses-2@2x.webp 2x" media="(min-width: 320px)">
             <img class="proses__image" src="./images/proses-2.png" alt="indelible paint" />
+          </picture>
           </li>
           <li class="proses__item">
             <div class="proses__box">
               <p class="proses__text">3</p>
               <h3 class="proses__title">Fast shipping</h3>
             </div>
+            <picture>
+              <source srcset="./images/desktop/proses-3@1x.webp 1x, ./images/desktop/proses-3@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./images/mobile/proses-3@1x.webp 1x, ./images/mobile/proses-3@2x.webp 2x" media="(min-width: 320px)">
             <img class="proses__image" src="./images/proses-3.png" alt="Fast shipping" />
+          </picture>
           </li>
         </ul>
       </div>
