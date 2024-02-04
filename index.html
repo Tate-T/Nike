@@ -125,7 +125,11 @@
     <section class="boots">
       <div class="container boots__container">
         <div class="boots__box">
-          <img class="boots__img" src="./images/nike-boots.webp" alt="Nike boots" />
+          <picture>
+            <source srcset="./images/desktop/boots@1x.webp 1x, ./images/desktop/boots@2x.webp 2x">
+            <source srcset="/images/mobile/boots@1x.webp 1x, /images/mobile/boots@2x.webp 2x">
+            <img class="boots__img" src="./images/nike-boots.webp" alt="Nike boots" />
+            </picture>
           <p class="boots__title">Comfortable sole</p>
         </div>
         <div class="boots__content">
@@ -145,7 +149,7 @@
         <img class="boots__line" src="./images/boots-line.webp" alt="" />
       </div>
     </section>
-    <!-- <section class="reviews">
+    <section class="reviews">
       <div class="container">
         <h2 class="reviews__title">Reviews</h2>
         <ul class="reviews__list">
@@ -156,7 +160,11 @@
             </p>
             <time datetime="2023-11-25" class="reviews__time">25.11</time>
             <div class="who-img-revievs">
+              <picture>
+                <source srcset="./images/desktop/reviews-1@1x.webp 1x, ./images/desktop/reviews-1@2x.webp 2x">
+                <source>
               <img src="./images/reviews-1.png" alt="men-1" class="reviews__photo" />
+              </picture>
               <div class="who-reviews">
                 <h3 class="reviews__name">John Teylor</h3>
                 <p class="reviews__info">With us from 2018</p>
@@ -170,7 +178,10 @@
             </p>
             <time datetime="2023-01-05" class="reviews__time">05.01</time>
             <div class="who-img-revievs">
+              <picture>
+                <source srcset="./images/desktop/reviews-2@1x.webp 1x, ./images/desktop/reviews-2@2x.webp 2x">
               <img src="./images/reviews-2.png" alt="men-2" class="reviews__photo" />
+              </picture>
               <div class="who-reviews">
                 <h3 class="reviews__name">Elizabeth Garsia</h3>
                 <p class="reviews__info">With us from 2020</p>
@@ -184,7 +195,10 @@
             </p>
             <time datetime="2023-06-18" class="reviews__time">18.06</time>
             <div class="who-img-revievs">
+              <picture>
+                <source srcset="./images/desktop/reviews-3@1x.webp 1x, ./images/desktop/reviews-3@2 x.webp 2[]">
               <img src="./images/reviews-3.png" alt="men-3" class="reviews__photo" />
+              </picture>
               <div class="who-reviews">
                 <h3 class="reviews__name">Tom Maquare</h3>
                 <p class="reviews__info">With us from 2019</p>
@@ -193,8 +207,8 @@
           </li>
         </ul>
       </div>
-    </section> -->
-    <!-- <section id="order" class="order">
+    </section>
+    <section id="order" class="order">
       <div class="container">
         <h2 class="order__title">Order</h2>
         <form class="order__form">
@@ -216,9 +230,9 @@
           <button data-modal-open type="submit" class="order__button">Order my Nike</button>
         </form>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <ul class="footer__list">
         <li class="footer__item">
@@ -240,14 +254,17 @@
           <p class="footer__country">United States</p>
         </div>
         <div class="div-footer__nike-abr">
+          <picture>
+            <source srcset="./images/desktop/logo@1x.webp 1x, ./images/desktop/logo@2x.webp 2x">
           <img class="footer__img-nike" src="./images/logo.png" alt="Nike" />
+          </picture>
           <p class="footer__abr">С&R</p>
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
   <!-- modal window -->
-  <!-- <div data-modal class="backdrop is-hidden">
+  <div data-modal class="backdrop is-hidden">
     <div class="modal__window">
       <div class="container">
         <form class="modal__form">
@@ -273,10 +290,16 @@
               <div class="modal__img">
                 <ul class="modal__images">
                   <li class="modal__image">
+                    <picture>
+                      <source srcset="./images/dektop/visa@1x.webp 1x ./images/dektop/visa@2x.webp 2x">
                     <img class="modal__visa" src="./images/visa.png" alt="VISA"></li>
+                    </picture>
                   <li class="modal__image">
+                    <picture>
+                      <source srcset="./images/desktop/mastercard@1x.webp 1x, ./images/desktop/mastercard@2x.webp 2x">
                     <img class="modal__mastercard" src="./images/mastercard.png"
                       alt="MasterCard">
+                      </picture>
                   </li>
                 </ul>
 
@@ -320,7 +343,7 @@
         </form>
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- <div data-menu class="menu is-hidden">
     <button data-menu-close type="button" class="menu__btn">
       <svg class="menu__svg">
