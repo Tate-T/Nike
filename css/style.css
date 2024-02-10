@@ -407,9 +407,14 @@ button:hover {
 }
 @media screen and (min-width: 1200px) {
   .boots {
-    background-image: url(../images/boots-bg.jpg);
+    background-image: url(../images/desktop/boots-bg@1x.webp);
     background-size: cover;
     background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .boots {
+    background-image: url(../images/desktop/boots-bg@2x.webp);
   }
 }
 .boots__container {

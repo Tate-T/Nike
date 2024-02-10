@@ -9,9 +9,15 @@
   background-size: 96px 197px, 140px 252px, cover;
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/boots-bg.jpg);
+    background-image: url(../images/desktop/boots-bg@1x.webp);
     background-size: cover;
     background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/boots-bg@2x.webp);
+    }
   }
 
   &__container {
