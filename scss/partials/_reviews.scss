@@ -2,9 +2,25 @@
   padding-top: 30px;
   padding-bottom: 88px;
 
-  background-image: url(../images/reviews-bc.jpg);
+  background-image: url(../../images/mobile/reviews-bg-mob@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/reviews-bg-mob@2x.webp);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../../images/desktop/reviews-bg@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/reviews-bg@2x.webp);
+    }
+  }
 }
 
 .reviews__title {
@@ -20,11 +36,18 @@
   justify-content: center;
   margin-top: 42px;
   gap: 93px;
+
+  
 }
 
 .reviews__item {
   padding: 49px 14px 29px 13px;
   width: 255px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .reviews__item:nth-child(1) {
@@ -58,6 +81,7 @@
     #ff8381 63.29%,
     #ff5489 100%
   );
+  display: block;
 }
 
 .reviews__text {

@@ -37,41 +37,54 @@
 }
 
 .button__confirm {
-  position: absolute;
-  top: 5px;
-  right: 7px;
+  display: none;
 
-  width: 250px;
-  height: 50px;
-  border-radius: 50px;
-  border: solid #000000;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    display: block;
 
-  font-family: $main-font;
-  font-size: 28px;
-  line-height: 1.18;
-  background-color: $main-color;
-  color: #8d8d8d;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid #000000;
+
+    font-family: $main-font;
+    font-size: 28px;
+    line-height: 1.18;
+    background-color: $main-color;
+    color: #8d8d8d;
+  }
 }
 
 .order__input1 {
-  width: 690px;
+  width: 80%;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   border: 1px solid #000000;
   border-radius: 50px;
+
+  @media screen and (min-width: 700px) {
+    width: 690px;
+  }
 }
 
 .order__input {
   display: block;
-  width: 580px;
+  width: 80%;
   height: 50px;
   border: 1px solid #000000;
   border-radius: 50px;
   margin-top: 19px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 700px) {
+    width: 580px;
+  }
 }
 
 .order__input::placeholder {
@@ -99,5 +112,4 @@
   line-height: 1.17;
   color: $main-color;
   background-color: #8e32c6;
-
 }

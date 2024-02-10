@@ -533,9 +533,24 @@ button:hover {
 .reviews {
   padding-top: 30px;
   padding-bottom: 88px;
-  background-image: url(../images/reviews-bc.jpg);
+  background-image: url(../../images/mobile/reviews-bg-mob@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url(../images/mobile/reviews-bg-mob@2x.webp);
+  }
+}
+@media screen and (min-width: 480px) {
+  .reviews {
+    background-image: url(../../images/desktop/reviews-bg@1x.webp);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .reviews {
+    background-image: url(../images/desktop/reviews-bg@2x.webp);
+  }
 }
 
 .reviews__title {
@@ -556,6 +571,12 @@ button:hover {
 .reviews__item {
   padding: 49px 14px 29px 13px;
   width: 255px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .reviews__item {
+    display: block;
+  }
 }
 
 .reviews__item:nth-child(1) {
@@ -571,6 +592,7 @@ button:hover {
 .reviews__item:nth-child(3) {
   border-radius: 15px;
   background: linear-gradient(142.67deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
+  display: block;
 }
 
 .reviews__text {
@@ -664,22 +686,28 @@ button:hover {
 }
 
 .button__confirm {
-  position: absolute;
-  top: 5px;
-  right: 7px;
-  width: 250px;
-  height: 50px;
-  border-radius: 50px;
-  border: solid #000000;
-  font-family: "Roboto";
-  font-size: 28px;
-  line-height: 1.18;
-  background-color: #ffffff;
-  color: #8d8d8d;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .button__confirm {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    display: block;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid #000000;
+    font-family: "Roboto";
+    font-size: 28px;
+    line-height: 1.18;
+    background-color: #ffffff;
+    color: #8d8d8d;
+  }
 }
 
 .order__input1 {
-  width: 690px;
+  width: 80%;
   height: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -687,16 +715,26 @@ button:hover {
   border: 1px solid #000000;
   border-radius: 50px;
 }
+@media screen and (min-width: 700px) {
+  .order__input1 {
+    width: 690px;
+  }
+}
 
 .order__input {
   display: block;
-  width: 580px;
+  width: 80%;
   height: 50px;
   border: 1px solid #000000;
   border-radius: 50px;
   margin-top: 19px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 700px) {
+  .order__input {
+    width: 580px;
+  }
 }
 
 .order__input::-moz-placeholder {
@@ -744,6 +782,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .footer__text {
@@ -759,6 +798,11 @@ button:hover {
   line-height: 1.17;
   text-decoration-line: underline;
   color: #ffffff;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__country-img-nike-abr {
@@ -789,6 +833,10 @@ button:hover {
   font-size: 24px;
   line-height: 1.33;
   color: #ffffff;
+}
+
+.footer__mail {
+  word-break: break-all;
 }
 
 .backdrop {
