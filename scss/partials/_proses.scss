@@ -8,8 +8,14 @@
   @media screen and (min-width: 1200px) {
     padding-top: 56px;
     padding-bottom: 80px;
-    background-image: url(../images/proses-bg.jpg);
+    background-image: url(../images/desktop/proces-bg@1x.webp);
     background-color: transparent;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/proces-bg@2x.webp);
+    }
   }
 
   &__list {

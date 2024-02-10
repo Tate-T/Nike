@@ -8,11 +8,28 @@ body {
   margin: 0 auto;
   max-width: 1440px;
 
-  background-image: url(../images/hero-bg.jpg) ;
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: lightgray;
+  background-image: url(../images/mobile/hero-bg-mob@1x.webp) ;
+  @media screen and (min-width: 480px){
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/hero-bg-mob@2x.webp);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/desktop/hero-bg@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero-bg@2x.webp);
+    }
+  }
 
   &__container {
     position: relative;
