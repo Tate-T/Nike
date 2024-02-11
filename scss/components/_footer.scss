@@ -5,6 +5,13 @@
   background-color: #021635;
 }
 
+.footer-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer__item {
   display: flex;
   justify-content: space-between;

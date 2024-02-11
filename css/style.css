@@ -135,9 +135,9 @@ button:hover {
   width: 100%;
   z-index: 5;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 320px) {
   .header {
-    background-color: #012d63;
+    background-color: rgba(1, 45, 99, 0.933);
   }
 }
 .header__container {
@@ -202,6 +202,9 @@ button:hover {
   color: #dcdcdc;
 }
 
+body {
+  padding-top: 90px;
+}
 @media screen and (min-width: 1200px) {
   body {
     padding-top: 81px;
@@ -659,6 +662,8 @@ button:hover {
   max-width: 1440px;
   padding-top: 21px;
   padding-bottom: 38px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../images/order-bc.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -790,6 +795,13 @@ button:hover {
   padding-top: 45px;
   padding-bottom: 50px;
   background-color: #021635;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__item {
