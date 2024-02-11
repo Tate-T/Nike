@@ -4,9 +4,17 @@
   // height: 417px;
   background-repeat: no-repeat;
   background-image: url(../../images/boots-flowers1.png),
-    url(../../images/boots-flowers2.png), url(../../images/boots-bg-mob.jpg);
+    url(../../images/boots-flowers2.png),
+    url(../../images/mobile/boots-bg-mob@1x.webp);
   background-position: 0px 164px, right 125px, center;
   background-size: 96px 197px, 140px 252px, cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/boots-flowers1.png),
+      url(../../images/boots-flowers2.png),
+      url(../../images/mobile/boots-bg-mob@2x.webp);
+  }
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/desktop/boots-bg@1x.webp);
@@ -14,8 +22,8 @@
     background-position: center;
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/desktop/boots-bg@2x.webp);
     }
   }
@@ -33,7 +41,16 @@
   }
 
   &__box {
+    position: relative;
+
+    width: 297px;
+    margin: 0 auto;
+
     display: flex;
+
+    @media screen and (min-width: 1200px) {
+      width: auto;
+    }
   }
 
   &__img {
@@ -48,8 +65,8 @@
 
   &__title {
     position: absolute;
-    top: 263px;
-    left: 67px;
+    top: 242px;
+    left: 53px;
 
     margin-left: auto;
 
@@ -80,6 +97,7 @@
     width: 305px;
     height: 37px;
     padding: 11px 9px;
+    margin: 0 auto;
 
     background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
     border-radius: 4px;
@@ -89,6 +107,7 @@
       width: 715px;
       height: 85px;
       border-radius: 15px;
+      margin: 0;
     }
   }
 
@@ -105,8 +124,8 @@
 
   &__border {
     position: absolute;
-    top: 98px;
-    right: 85px;
+    top: 78px;
+    right: 33px;
 
     width: 47px;
     height: 43px;
@@ -114,7 +133,7 @@
     border: 2px solid #fff;
 
     @media screen and (min-width: 1200px) {
-      top: 258px;
+      top: 220px;
       right: 371px;
 
       width: 130px;
@@ -124,8 +143,8 @@
 
   &__line {
     position: absolute;
-    top: 140px;
-    left: 66px;
+    top: 120px;
+    left: 50px;
 
     width: 185px;
     height: 145px;
@@ -133,9 +152,8 @@
     transform: rotate(180deg);
 
     @media screen and (min-width: 1200px) {
-      top: 95px;
-      right: -11px;
-      left: 0;
+      top: 50px;
+      left: 700px;
 
       width: 403px;
       height: 183px;

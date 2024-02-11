@@ -5,6 +5,7 @@
   background-image: url(../../images/mobile/reviews-bg-mob@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -36,8 +37,6 @@
   justify-content: center;
   margin-top: 42px;
   gap: 93px;
-
-  
 }
 
 .reviews__item {

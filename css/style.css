@@ -401,9 +401,14 @@ button:hover {
   margin: 0 auto;
   max-width: 1440px;
   background-repeat: no-repeat;
-  background-image: url(../../images/boots-flowers1.png), url(../../images/boots-flowers2.png), url(../../images/boots-bg-mob.jpg);
+  background-image: url(../../images/boots-flowers1.png), url(../../images/boots-flowers2.png), url(../../images/mobile/boots-bg-mob@1x.webp);
   background-position: 0px 164px, right 125px, center;
   background-size: 96px 197px, 140px 252px, cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .boots {
+    background-image: url(../../images/boots-flowers1.png), url(../../images/boots-flowers2.png), url(../../images/mobile/boots-bg-mob@2x.webp);
+  }
 }
 @media screen and (min-width: 1200px) {
   .boots {
@@ -429,7 +434,15 @@ button:hover {
   }
 }
 .boots__box {
+  position: relative;
+  width: 297px;
+  margin: 0 auto;
   display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .boots__box {
+    width: auto;
+  }
 }
 .boots__img {
   width: 297px;
@@ -443,8 +456,8 @@ button:hover {
 }
 .boots__title {
   position: absolute;
-  top: 263px;
-  left: 67px;
+  top: 242px;
+  left: 53px;
   margin-left: auto;
   font-family: "Playfair Display";
   font-size: 14px;
@@ -472,6 +485,7 @@ button:hover {
   width: 305px;
   height: 37px;
   padding: 11px 9px;
+  margin: 0 auto;
   background: linear-gradient(91.33deg, #8e32c6 15.44%, #d600c0 69.67%);
   border-radius: 4px;
 }
@@ -481,6 +495,7 @@ button:hover {
     width: 715px;
     height: 85px;
     border-radius: 15px;
+    margin: 0;
   }
 }
 .boots__text {
@@ -496,8 +511,8 @@ button:hover {
 }
 .boots__border {
   position: absolute;
-  top: 98px;
-  right: 85px;
+  top: 78px;
+  right: 33px;
   width: 47px;
   height: 43px;
   border-radius: 50%;
@@ -505,7 +520,7 @@ button:hover {
 }
 @media screen and (min-width: 1200px) {
   .boots__border {
-    top: 258px;
+    top: 220px;
     right: 371px;
     width: 130px;
     height: 130px;
@@ -513,17 +528,16 @@ button:hover {
 }
 .boots__line {
   position: absolute;
-  top: 140px;
-  left: 66px;
+  top: 120px;
+  left: 50px;
   width: 185px;
   height: 145px;
   transform: rotate(180deg);
 }
 @media screen and (min-width: 1200px) {
   .boots__line {
-    top: 95px;
-    right: -11px;
-    left: 0;
+    top: 50px;
+    left: 700px;
     width: 403px;
     height: 183px;
     transform: rotate(0deg);
@@ -536,6 +550,7 @@ button:hover {
   background-image: url(../../images/mobile/reviews-bg-mob@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .reviews {
@@ -644,7 +659,6 @@ button:hover {
   max-width: 1440px;
   padding-top: 21px;
   padding-bottom: 38px;
-  margin: auto;
   background-image: url(../images/order-bc.jpg);
   background-repeat: no-repeat;
   background-position: center;
